@@ -1,0 +1,63 @@
+<template lang="">
+
+    <div class="outer-cursor" :style="{ top: cursorY + 'px', left: cursorX + 'px' }"><div class="inner-cursor"></div></div>
+    
+</template>
+<script>
+export default {
+    data(){
+        return {
+            cursorX: 0,
+            cursorY: 0
+        }
+    },
+    mounted() {
+        // Add event listeners for mouse movement
+        document.addEventListener("mousemove", this.updateCursorPosition);
+    },
+    before() {
+        // Remove event listeners when component is destroyed
+        document.removeEventListener("mousemove", this.updateCursorPosition);
+    },
+    methods: {
+        updateCursorPosition(event) {
+          this.cursorX = event.clientX;
+          this.cursorY = event.clientY;
+        }
+    },
+}
+</script>
+<style>
+
+.outer-cursor {
+    position: fixed;
+    left: 10px;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    z-index: 5000;
+    transition: none!important
+}
+
+.inner-cursor {
+    position: fixed;
+    width: 9.5px;
+    height: 9.5px;
+    left: 12px;
+    top: 12px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 5000;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    pointer-events: none;
+    box-shadow: 1px 1px 7px 1px black;
+    transition: width 0.5s, height 0.5s ease-in-out !important;
+}
+
+    
+</style>
