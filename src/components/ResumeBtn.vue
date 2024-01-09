@@ -11,7 +11,7 @@
                 <div class="paper"></div>
             </div>
         </div>
-        Continue Application
+        View Resume
     </button>
 </template>
 <script>
