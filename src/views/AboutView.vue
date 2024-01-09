@@ -4,7 +4,7 @@
     <!-- <div class="container col-xxl-8 px-4 py-5"> -->
     <div class="container col-xxl-12 px-3">
 
-      <div class="row flex-lg-row align-items-center g-5" id="topSec">
+      <div class="row flex-lg-row align-items-center" id="topSec">
 
         <div class="col-10 col-sm-12 col-lg-6" id="imgContainer">
 
@@ -18,53 +18,94 @@
 
           <p class="lead text-white-50 text-center" id="txt">{{ ix.pText }}</p>
 
-          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-
-            <button type="button" class="btn btn-outline-primary btn-lg px-4">Default</button>
-
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <router-link to="/resume"><ResumeBtnVue /></router-link> 
           </div>
               
         </div>
 
       </div>
       <!-- <div id="card"></div> -->
-      
-      <div class="" id="expBox">
-        <img :src="ix.html5" alt="" id="card" data-v-img/>
-
-        <img :src="ix.css" alt="" id="card" data-v-img/>
-
-        <img :src="ix.Bootstrap" alt="" id="card" data-v-img/>
-
-        <img :src="ix.JavaScript" alt="" id="card" data-v-img/>
-        
-        <img :src="ix.NodeJs" alt="" id="card" data-v-img/>
-        
-        <img :src="ix.ReactJS" alt="" id="card" data-v-img/>
-        
-        <img :src="ix.Redux" alt="" id="card" data-v-img/>
-        
-        <img :src="ix.Python" alt="" id="card" data-v-img/>
-        
-        <img :src="ix.ReactBootstrap" alt="" id="card" data-v-img/>
-        
-        <img :src="ix.Cpp" alt="" id="card" data-v-img/>
-        
-        <img :src="ix.VueJs" alt="" id="card" data-v-img/>
-        
-        <img :src="ix.VueX" alt=""  id="card" data-v-img/>
+      <div class="container-fluid row bg-white col-lg-12 flex-lg-row align-items-center mb-4 rounded-2">
+        <h1 class="fw-bold border-bottom border-black text-uppercase text-decoration-underline text-black">{{ ix.skills }} <i class="fa-solid fa-code fa-sm" style="color: #000000;"></i></h1>
+        <div class="container d-flex mb-2" id="expBox">
+          <div class="text-center mb-2">
+            <img :src="ix.html5" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold text-center">Html 5</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.css" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold">Css 3</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.Bootstrap" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-0 fw-bold">Bootstrap5</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.JavaScript" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-1 fw-bold">JavaScript</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.NodeJs" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold">Nodejs</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.ReactJS" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold">ReactJs</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.Redux" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold">Redux</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.Python" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold">Python</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.ReactBootstrap" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold">ReactBootstrap</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.Cpp" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold">Html 5</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.VueJs" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold">Html 5</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.VueX" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold">Html 5</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center border-top border-black pt-2 pb-2">
+          <router-link to="/projects" id="button" class="btn">View projects</router-link>
+          
+        </div>
       </div>
     </div>
-
 
 
   </div>
 
 </template>
 <script>
+import ResumeBtnVue from '../components/ResumeBtn.vue'
+// import ResumeBtnVue
 export default {
   components : {
-
+    ResumeBtnVue
   },
   methods : {
     fetchAboutData : function(){
@@ -80,6 +121,16 @@ export default {
 /* *{
   overflow: hidden;
 } */
+
+
+#button{
+  background: linear-gradient(to left,rgba(0, 30, 255, 0.897), rgb(0, 200, 255));
+  width: 50%;
+}
+#button:hover{
+  background: linear-gradient(to left,rgb(0, 200, 255), rgba(0, 30, 255, 0.897));
+  transition: 1.5s ease-in-out;
+}
 
 #topSec{
   min-height: 100vh;
@@ -123,29 +174,36 @@ export default {
 
 
 #expBox{
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.216);
   min-height: 20vh;
   display: grid;
+  overflow-x: scroll;
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 20px;
-  
+  padding: 30px;
 }
 
 #card {
-  width: 100px;
+  width: 110px;
+  height: 110px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  height: 100px;
   padding: 5px;
-  margin-left: 5px;
+  margin: 30px;
   border-radius: 50%;
-  background: #e0e0e0;
-  /* filter: grayscale(50%); */
-  box-shadow: 15px 15px 30px #fffffffd inset,-5px -5px 30px #ffffff27;
+  filter: grayscale();
+  border: 1px solid black;
+  background: #ffffff;
+  box-shadow: 15px 15px 30px #b7b3b3fd inset,-5px -5px 30px #ffffff27;
+  transition: all 0.2s ease-in-out;
 }
 
 #card:hover{
   transform: scale(110%);
+  transition: all 0.4s ease-in-out;
+  filter: none;
+  border: 1px solid rgba(7, 229, 241, 0.523);
+  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.452);
 }
 
 @media (max-width: 780px){
