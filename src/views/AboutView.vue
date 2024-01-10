@@ -19,78 +19,117 @@
           <p class="lead text-white-50 text-center" id="txt">{{ ix.pText }}</p>
 
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <router-link to="/resume"><ResumeBtnVue /></router-link> 
+
+
+            <div class="d-flex container justify-content-evenly border-bottom">
+              <div class="text-white d-inline gap-3 small">
+                <p class="text-decoration-underline fw-bold">{{ ix.txt }}:</p>
+                <p>{{ix.country}}</p>
+  
+                <p class="text-decoration-underline fw-bold">{{ ix.txtTwo }}:</p>
+                <p>{{ix.city}}</p>
+              </div>
+              <div class="text-white d-inline gap-3 small">
+                <p class="text-decoration-underline fw-bold">{{ ix.txtThree }}:</p>
+                <p>{{ix.birth}}</p>
+  
+                <p class="text-decoration-underline fw-bold">{{ ix.txtFour }}:</p>
+                <p>{{ix.criminalrecord}}</p>
+  
+              </div>
+              <div class="text-white d-inline gap-3 small">
+                <p class="text-decoration-underline fw-bold">{{ ix.txtFive }}:</p>
+                <p>{{ix.homelang}}</p>
+
+                <p class="text-decoration-underline fw-bold">{{ ix.txtSix }}:</p>
+                <p>{{ix.secondlang}}</p>
+              </div>
+            </div>
+
           </div>
+
+          <div class="mt-3">
+            <router-link to="/resume">
+
+              <ResumeBtnVue />
+  
+            </router-link> 
+          </div>
+          
               
         </div>
 
       </div>
       <!-- <div id="card"></div> -->
       <div class="container-fluid row bg-white col-lg-12 flex-lg-row align-items-center mb-4 rounded-2">
+
         <h1 class="fw-bold border-bottom border-black text-uppercase text-decoration-underline text-black">{{ ix.skills }} <i class="fa-solid fa-code fa-sm" style="color: #000000;"></i></h1>
+
         <div class="container d-flex mb-2" id="expBox">
+
           <div class="text-center mb-2">
             <img :src="ix.html5" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-2 fw-bold text-center">Html 5</span>
+            <span class="px-4 mx-2 fw-bold text-center">{{ix.htmltext}}</span>
           </div>
           
           <div class="text-center mb-2">
             <img :src="ix.css" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-2 fw-bold">Css 3</span>
+            <span class="px-4 mx-2 fw-bold">{{ix.csstext}}</span>
           </div>
           
           <div class="text-center mb-2">
             <img :src="ix.Bootstrap" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-0 fw-bold">Bootstrap5</span>
+            <span class="px-4 mx-0 fw-bold">{{ix.Bootstraptext}}</span>
           </div>
           
           <div class="text-center mb-2">
             <img :src="ix.JavaScript" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-1 fw-bold">JavaScript</span>
+            <span class="px-4 mx-1 fw-bold">{{ix.Jstext}}</span>
           </div>
           
           <div class="text-center mb-2">
             <img :src="ix.NodeJs" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-2 fw-bold">Nodejs</span>
+            <span class="px-4 mx-2 fw-bold">{{ix.nodetext}}</span>
           </div>
           
           <div class="text-center mb-2">
             <img :src="ix.ReactJS" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-2 fw-bold">ReactJs</span>
+            <span class="px-4 mx-2 fw-bold">{{ix.reacttext}}</span>
           </div>
           
           <div class="text-center mb-2">
             <img :src="ix.Redux" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-2 fw-bold">Redux</span>
+            <span class="px-4 mx-2 fw-bold">{{ix.reduxtext}}</span>
           </div>
           
           <div class="text-center mb-2">
             <img :src="ix.Python" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-2 fw-bold">Python</span>
+            <span class="px-4 mx-2 fw-bold">{{ix.pythontext}}</span>
           </div>
           
           <div class="text-center mb-2">
             <img :src="ix.ReactBootstrap" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-2 fw-bold">ReactBootstrap</span>
+            <span class="px-4 mx-2 fw-bold">{{ix.reactBootstraptext}}</span>
           </div>
           
           <div class="text-center mb-2">
             <img :src="ix.Cpp" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-2 fw-bold">Html 5</span>
+            <span class="px-4 mx-2 fw-bold">{{ix.cpptext}}</span>
           </div>
           
           <div class="text-center mb-2">
             <img :src="ix.VueJs" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-2 fw-bold">Html 5</span>
+            <span class="px-4 mx-2 fw-bold">{{ix.vuetext}}</span>
           </div>
           
           <div class="text-center mb-2">
             <img :src="ix.VueX" alt="" id="card" data-v-img/>
-            <span class="px-4 mx-2 fw-bold">Html 5</span>
+            <span class="px-4 mx-2 fw-bold">{{ix.vuextext}}</span>
           </div>
         </div>
-        <div class="d-flex justify-content-center border-top border-black pt-2 pb-2">
-          <router-link to="/projects" id="button" class="btn">View projects</router-link>
+        <div class="d-flex justify-content-center border-top border-black pt-2 pb-2" v-for="btn of $store.state.aboutData" v-bind:key="btn.aboutData">
+
+          <router-link to="/projects" id="button" class="btn">{{btn.viewProjects}}</router-link>
           
         </div>
       </div>

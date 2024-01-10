@@ -39,7 +39,7 @@ export default {
     mix-blend-mode: difference;
     transform: translate(-50%,-50%);
     pointer-events: none;
-    z-index: 5000;
+    z-index: 9999;
     transition: none!important
 }
 

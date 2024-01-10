@@ -4,21 +4,19 @@
 
         <div v-for="ix of $store.state.testimonialData" v-bind:key="ix.id">
 
-            <div class="card" id="image">
+            <div class="card my-3 mx-3" id="image">
     
                 <div class="container" id="containHeight">
-                    <img :src="ix.image" class="card-img-top" alt="" id="containImg">
+                    <img :src="ix.image" class="card-img-top" :alt="ix.personname" id="containImg">
                 </div>
     
                 <div class="card-body">
     
-                  <h5 class="card-title">{{ix.personname}}</h5>
+                  <h4 class="card-title fw-bold">{{ix.personname}}</h4>
     
                   <p class="card-text">{{ix.jobtitle}}</p>
     
                   <div class="card-text" id="textOverflowScroll">{{ix.text}}</div>
-    
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
     
                 </div>
     
@@ -29,6 +27,7 @@
     </div>
 
 </template>
+
 <script>
 export default {
 //   props : {
@@ -47,11 +46,12 @@ export default {
   }
 }
 </script>
+
 <style scoped>
 #gridCards{
-    background-color: aliceblue;
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
+    margin-left: 150px;
 }
 
 #image{
@@ -62,13 +62,14 @@ export default {
     height: 25rem;
 }
 
-#textOverflowScroll{
-    max-height: 140px;
-    overflow: scroll;
+#containImg:hover{
+    transform: scale(90%);
+    transition: all 0.5s ease-in-out;
 }
 
-#containHeight{
- 
+#textOverflowScroll{
+    max-height: 170px;
+    overflow: scroll;
 }
 
 </style>
