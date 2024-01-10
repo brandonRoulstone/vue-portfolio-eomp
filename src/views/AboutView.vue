@@ -7,7 +7,7 @@
       <div class="row flex-lg-row align-items-center" id="topSec">
 
         <div class="col-10 col-sm-12 col-lg-6" id="imgContainer">
-
+          <span id="tag">{{ix.imgtxt}}</span>
           <img :src="ix.myImage" class="d-block mx-lg-auto img-fluid" :alt="ix.imgAlt" id="imge" loading="lazy">
 
         </div>
@@ -160,6 +160,16 @@ export default {
 /* *{
   overflow: hidden;
 } */
+
+#tag{
+  background: linear-gradient(rgba(0, 225, 255, 0.419), rgba(0, 13, 255, 0.406));
+  width: 10%;
+  color: white;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  left: 12.7%;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 
 #button{
