@@ -34,18 +34,18 @@ export default {
 
 .continue-application {
     --color: #fff;
-    --background: #404660;
-    --background-hover: #3A4059;
-    --background-left: #2B3044;
+    --background: linear-gradient(#3caad6, rgb(8, 0, 255));
+    --background-hover: #0429bb;
+    --background-left: #0d5ad7;
     --folder: #F3E9CB;
     --folder-inner: #BEB393;
     --paper: #FFFFFF;
     --paper-lines: #BBC1E1;
     --paper-behind: #E1E6F9;
     --pencil-cap: #fff;
-    --pencil-top: #275EFE;
+    --pencil-top: #fe3527;
     --pencil-middle: #fff;
-    --pencil-bottom: #5C86FF;
+    --pencil-bottom: #ff5c5c;
     --shadow: rgba(13, 15, 25, .2);
     border: none;
     outline: none;
