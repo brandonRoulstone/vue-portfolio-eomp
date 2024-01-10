@@ -52,34 +52,21 @@
       </div>
       
     </div>
-    
-    <div class="d-flex justify-content-center gap-5 mt-1">
 
-      <div class="border p-2 rounded-5" id="ic">
-        <i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i>
-      </div>
-
-      <div class="border border-info p-2 rounded-5" id="ic">
-        <i class="fa-brands fa-linkedin fa-xl" style="color: #0e49af;"></i>
-      </div>
-
-      <div class="border p-2 rounded-5" id="ic">
-        <i class="fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i>
-      </div>
-
-    </div>
+    <SocialMediaIcons />
 
   </div>
   
 </template>
 
 <script>
+import SocialMediaIcons from '@/components/SocialMediaIcons.vue';
 // import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
 export default {
 
   components : {
-    // FontAwesomeIcon
+    SocialMediaIcons
   },
 
   methods : {
