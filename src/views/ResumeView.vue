@@ -33,6 +33,7 @@
                         <li><p class="small">JavaScript (ES6)</p></li>
                         <li><p class="small">React Js & Vue Js</p></li>
                         <li><p class="small">Python 3</p></li>
+                        <li><p class="small">Git & Github</p></li>
                         <li><p class="small">Html 5, Css 3</p></li>
                     </ul>
                 </div>
