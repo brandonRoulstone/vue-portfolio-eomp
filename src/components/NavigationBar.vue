@@ -59,8 +59,9 @@ export default {
   cursor: none;
   transition: all 1s ease-in-out;
   font-size: 13px;
+  }
 }
-}
+
 @media (max-width: 540px) {
   #nav, router-link {
   font-weight: bold;
@@ -69,6 +70,7 @@ export default {
   transition: all 1s ease-in-out;
   font-size: 11px;
  }
+
 }
     
 </style>

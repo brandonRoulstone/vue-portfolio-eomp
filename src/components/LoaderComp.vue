@@ -14,7 +14,7 @@
     mounted() {
       // Simulate a 5-second delay before displaying content
       setTimeout(() => {
-        // Set loaded to true after 5 seconds
+        // Set loaded to true after 2 seconds
         this.loaded = true; 
       }, 2000);
     }
