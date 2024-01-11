@@ -48,7 +48,7 @@
 
           </div>
 
-          <div class="mt-3">
+          <div class="mt-3 mb-3">
             <router-link to="/resume">
 
               <ResumeBtnVue />
@@ -126,6 +126,17 @@
             <img :src="ix.VueX" alt="" id="card" data-v-img/>
             <span class="px-4 mx-2 fw-bold">{{ix.vuextext}}</span>
           </div>
+
+          <div class="text-center mb-2">
+            <img :src="ix.mysql" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold">{{ix.mysqltxt}}</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.Wordpress" alt="" id="card" data-v-img/>
+            <span class="px-4 mx-2 fw-bold">{{ix.wordpresstxt}}</span>
+          </div>
+
         </div>
         <div class="d-flex justify-content-center border-top border-black pt-2 pb-2" v-for="btn of $store.state.aboutData" v-bind:key="btn.aboutData">
 
@@ -255,6 +266,42 @@ export default {
   box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.452);
 }
 
+@media (max-width: 1445px) {
+  #imge{
+    height: 390px;
+  }
+  
+  #txt{
+    overflow: scroll;
+    max-height: 170px;
+    font-size: 15px;
+  }
+
+  #tag{
+    width: 20%;
+    position: absolute;
+    left: 10.5%;
+  }
+}
+
+@media (max-width: 1025px) {
+  #imge{
+    height: 390px;
+  }
+  
+  #txt{
+    overflow: scroll;
+    max-height: 170px;
+    font-size: 15px;
+  }
+
+  #tag{
+    width: 30%;
+    position: absolute;
+    left: 4.8%;
+  }
+}
+
 @media (max-width: 780px){
   #imge{
     height: 290px;
@@ -265,15 +312,71 @@ export default {
     max-height: 170px;
     font-size: 15px;
   }
+
+  #tag{
+    background: linear-gradient(rgba(0, 225, 255, 0.419), rgba(0, 13, 255, 0.406));
+    width: 30%;
+    color: white;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    left: 5%;
+    font-family: 'Times New Roman', Times, serif;
+  }
 }
 
-@media (max-width: 501px) {
+@media (max-width: 450px) {
   #imgContainer{
     display: flex;
     justify-content: center;
   }
   ::-webkit-scrollbar {
    width: 0px;
+  }
+  #tag{
+    background: linear-gradient(rgba(0, 225, 255, 0.419), rgba(0, 13, 255, 0.406));
+    width: 40%;
+    color: white;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    left: 3.7%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
+  
+@media (max-width: 400px) {
+  #imgContainer{
+    display: flex;
+    justify-content: center;
+  }
+  ::-webkit-scrollbar {
+   width: 0px;
+  }
+  #tag{
+    background: linear-gradient(rgba(0, 225, 255, 0.419), rgba(0, 13, 255, 0.406));
+    width: 40%;
+    color: white;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    left: 4.1%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
+@media (max-width: 380px) {
+  #imgContainer{
+    display: flex;
+    justify-content: center;
+  }
+  ::-webkit-scrollbar {
+   width: 0px;
+  }
+  #tag{
+    background: linear-gradient(rgba(0, 225, 255, 0.419), rgba(0, 13, 255, 0.406));
+    width: 40%;
+    color: white;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    left: 4.7%;
+    font-family: 'Times New Roman', Times, serif;
   }
 }
   

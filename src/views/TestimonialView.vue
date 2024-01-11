@@ -6,15 +6,15 @@
 
             <div class="card my-3 mx-3" id="image">
     
-                <div class="container" id="containHeight">
+                <div class="container border-bottom pb-2 border-black" id="containHeight">
                     <img :src="ix.image" class="card-img-top" :alt="ix.personname" id="containImg">
                 </div>
     
                 <div class="card-body">
     
-                  <h4 class="card-title fw-bold">{{ix.personname}}</h4>
+                  <h4 class="card-title fw-bold fs-3">{{ix.personname}}</h4>
     
-                  <p class="card-text">{{ix.jobtitle}}</p>
+                  <p class="card-text fw-bold">{{ix.jobtitle}}</p>
     
                   <div class="card-text" id="textOverflowScroll">{{ix.text}}</div>
     
@@ -55,15 +55,16 @@ export default {
 }
 
 #image{
-    width: 20rem;
+  width: 20rem;
+  filter: grayscale();
 }
 
 #containImg{
-    height: 25rem;
+    height: 20rem;
 }
 
 #containImg:hover{
-    transform: scale(90%);
+    transform: scale(95%);
     transition: all 0.5s ease-in-out;
 }
 
