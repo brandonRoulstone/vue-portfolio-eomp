@@ -18,7 +18,7 @@
 
           <div class="container mt-5 mb-0" id="box">
 
-            <span class="" id="introText">{{ ix.welcome }}</span>
+            <span id="introText">{{ ix.welcome }}</span>
 
           </div>
 
@@ -34,13 +34,13 @@
 
             <router-link to="/projects">
 
-              <button type="button" class="btn btn-lg px-4 gap-3 fs-6" data-btn>{{ ix.projectsBtn }}</button>
+              <button type="button" class="btn btn-lg px-4 gap-3" data-btn>{{ ix.projectsBtn }}</button>
 
             </router-link>
 
             <router-link to="/contact">
 
-              <button type="button" class="btn btn-lg px-4 fs-6" data-btn>{{ ix.hireMebtn }}</button>
+              <button type="button" class="btn btn-lg px-4" data-btn>{{ ix.hireMebtn }}</button>
 
             </router-link>
 
@@ -393,6 +393,74 @@ export default {
     z-index: -1;
   }
 
+}
+
+@media (max-width: 540px) {
+  #introText{
+    font-size: 20px;
+  }
+  
+  #box {
+    white-space: nowrap; 
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    animation: typewriter 4s steps(50) alternate;
+  }
+
+  #text-L{
+    font-size: 15px;
+  }
+
+  #text-S{
+    font-size: 11px;
+  }
+
+  @keyframes typewriter {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  #introText{
+    font-size: 20px;
+  }
+
+  #box {
+    white-space: nowrap; 
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    animation: typewriter 4s steps(50) alternate;
+  }
+
+  #text-L{
+    font-size: 15px;
+  }
+
+  #text-S{
+    font-size: 11px;
+  }
+
+  [data-btn]{
+    font-size: 13px;
+  }
+
+  @keyframes typewriter {
+    0% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 300px;
+    }
+  }
 }
 
 </style>
