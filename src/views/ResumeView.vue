@@ -304,6 +304,11 @@ export default {
             font-size: 10px;
         }
 
+
+        #expTxt{
+            display: none;
+        }
+
         [data-wrap]{
             display: flex;
             flex-direction: column;
@@ -348,9 +353,7 @@ export default {
             height: 165px;
             width: 95%;
             top: 175%;
-            background-repeat: no-repeat;
             left: 2.5%;
-            background-image: url("https://images.pexels.com/photos/1632788/pexels-photo-1632788.jpeg?auto=compress&cs=tinysrgb&w=600");
         }
 
         #sideBar{
@@ -371,15 +374,52 @@ export default {
 
     }
 
-    @media (max-width: 330px) {
-        *{
+    @media (max-width: 430px) {
+        #expTxt{
+            display: none;
         }
+
+        #textGreet{
+            position: absolute;
+            width: 80%;
+            top: 188%;
+            left: 9%;
+            font-size: 15px;
+            color: white;
+        }
+
+        #img{
+            position: absolute;
+            height: 165px;
+            width: 95%;
+            top: 185%;
+            left: 2.5%;
+        }
+
+        
+        #absTxt{
+            top: 240%;
+            left: 3.9%;
+            color: black;
+        }
+
+        #absoluteTxt{
+            top: 218%;
+            left: 1%;
+        }
+    }
+
+    @media (max-width: 330px) {
         #img{
             position: absolute;
             height: 165px;
             width: 95%;
             top: 172%;
             left: 2.5%;
+        }
+
+        #expTxt{
+            display: none;
         }
 
         #textGreet{
