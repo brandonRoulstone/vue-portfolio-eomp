@@ -371,5 +371,26 @@ export default {
 
     }
 
+    @media (max-width: 330px) {
+        *{
+        }
+        #img{
+            position: absolute;
+            height: 165px;
+            width: 95%;
+            top: 172%;
+            left: 2.5%;
+        }
+
+        #textGreet{
+            position: absolute;
+            width: 80%;
+            top: 176.5%;
+            left: 9%;
+            font-size: 12px;
+            color: white;
+        }
+    }
+
     
 </style>

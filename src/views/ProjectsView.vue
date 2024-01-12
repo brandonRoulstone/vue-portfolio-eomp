@@ -5,12 +5,22 @@
                 <div class="card my-3 mx-3" id="image">
             
                     <div class="container border-bottom pb-2 pt-2 px-2 border-black" id="containHeight">
+
                         <img :src="ix.image" class="card-img-top" :alt="ix.personname" id="containImg">
+
+                        <div class="container mt-2 d-flex justify-content-evenly">
+
+                            <a :href="ix.Github" class="btn" id="btnGit"><i class="fa-brands fa-github fa-sm" style="color: #000000;"></i> {{ix.gittxt}}</a>
+
+                            <a :href="ix.live" class="btn" id="btnLive"><i class="fa-solid fa-server fa-sm" style="color: #000000;"></i> {{ix.livetxt}}</a>
+
+                        </div>
+
                     </div>
         
-                    <div class="card-body bg-body-tertiary">
+                    <div class="card-body" id="cBody">
         
-                      <h4 class="card-title fw-bold">{{ix.name}}</h4>
+                      <h4 class="card-title fw-bold" id="head">{{ix.name}}</h4>
         
                       <p class="card-text fw-bold" id="textOverflowScroll">{{ix.aboutProject}}</p>
         
@@ -18,6 +28,7 @@
         
                 </div>
             </div>
+
         </div>
     </div>
 </template>
@@ -65,19 +76,16 @@ export default {
 
     #grid{
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(9, 1fr);
         overflow: scroll;
+        scroll-behavior: smooth;
         max-width: 100%;
     }
 
     #image{
         width: 30rem;
-        height: 30rem;
-        background: linear-gradient(blue, rgb(0, 213, 255));
-    }
-
-    #image:hover{
-            background: linear-gradient(rgb(0, 213, 255), blue);
+        height: 35rem;
+        background: linear-gradient(rgb(54, 54, 58), rgb(2, 97, 114));
     }
     
     #containImg{
@@ -86,11 +94,43 @@ export default {
     
     #containImg:hover{
         transform: scale(103%);
-        transition: all 0.3s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        image-rendering: crisp-edges;
     }
 
-    #textOverflowScroll{
-        max-height: 60px;
-        overflow: scroll;
+    #textOverflowScroll, #head{
+        color: #cecece;
+        height: 20%;
+        width: 100%;
     }
+
+    #btnLive{
+        border: 1px solid rgba(0, 0, 0, 0);
+        background: radial-gradient(circle, rgb(0, 191, 255), rgb(52, 60, 109));
+        width: 30%;
+    }
+
+    #btnGit{
+        border: 1px solid rgba(255, 254, 254, 0);
+        background: radial-gradient(circle, rgb(0, 191, 255), rgb(52, 60, 109));
+        width: 30%;
+    }
+
+    
+    
+    #btnGit:hover{
+        border: 1px solid rgb(30, 29, 29);
+        transform: scale(110%);
+        transition: all 0.2s ease-in-out;
+        color: #ffffff;
+        background: radial-gradient(circle, rgb(0, 191, 255), rgb(52, 60, 109));
+    }
+    #btnLive:hover{
+        border: 1px solid rgb(30, 29, 29);
+        transform: scale(110%);
+        transition: all 0.2s ease-in-out;
+        color: #ffffff;
+        background: radial-gradient(circle, rgb(0, 191, 255), rgb(52, 60, 109));
+    }
+    
 </style>
