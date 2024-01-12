@@ -51,7 +51,7 @@ export default {
 #gridCards{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
-    margin-left: 150px;
+    min-height: 100vh;
 }
 
 #image{
@@ -71,6 +71,21 @@ export default {
 #textOverflowScroll{
     max-height: 170px;
     overflow: scroll;
+}
+
+@media (max-width: 450px) {
+  #gridCards{
+    overflow: scroll;
+    display: flex;
+    margin-left: 0;
+    max-width: 100%;
+    min-height: 100vh;
+  }
+
+  #textOverflowScroll{
+    max-height: 130px;
+    overflow: scroll;
+  }
 }
 
 </style>

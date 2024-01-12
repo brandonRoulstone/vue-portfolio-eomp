@@ -59,5 +59,15 @@ export default {
     transition: width 0.5s, height 0.5s ease-in-out !important;
 }
 
+@media (max-width: 489px) {
+    .outer-cursor {
+        display: none;
+    }
+    
+    .inner-cursor {
+        display: none;
+    }
+}
+
     
 </style>

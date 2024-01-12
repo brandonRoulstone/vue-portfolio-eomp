@@ -1,5 +1,5 @@
 <template>
-    <div v-for="ix of $store.state.resumeData" v-bind:key="ix.name" class="container" id="resumeSec">
+    <div v-for="ix of $store.state.resumeData" v-bind:key="ix.name" class="container" id="resumeSec" data-wrap>
 
         <div class="text-white container" id="sideSec">
 
@@ -11,7 +11,7 @@
 
             <div class="row text-white mt-4">
 
-                <div class="d-flex justify-content-start mx-4">
+                <div class="d-flex justify-content-start mx-4" id="align">
 
                     <i class="fa-solid fa-phone fa-sm mt-2" style="color: #ffffff;"></i>
 
@@ -19,7 +19,7 @@
 
                 </div>
 
-                <div class="d-flex justify-content-start mx-4">
+                <div class="d-flex justify-content-start mx-4" id="align">
 
                     <i class="fa-solid fa-envelope fa-sm mt-2" style="color: #ffffff;"></i>
 
@@ -27,7 +27,7 @@
 
                 </div>
 
-                <div class="d-flex justify-content-start mx-4">
+                <div class="d-flex justify-content-start mx-4" id="align">
 
                     <i class="fa-solid fa-location-dot fa-sm mt-2" style="color: #ffffff;"></i>
 
@@ -35,7 +35,7 @@
 
                 </div>
 
-                <div class="d-flex justify-content-start mx-4">
+                <div class="d-flex justify-content-start mx-4" id="align">
 
                     <i class="fa-solid fa-globe fa-sm mt-2" style="color: #ffffff;"></i>
 
@@ -53,7 +53,7 @@
 
                 </div>
 
-                <div class="d-flex justify-content-start mx-2">
+                <div class="d-flex justify-content-start mx-2" id="align">
 
                     <ul class="text-start">
 
@@ -85,7 +85,7 @@
 
                 </div>
 
-                <div>
+                <div id="align">
                     
                     <ul class="text-start">
 
@@ -111,7 +111,7 @@
 
                 </div>
 
-                <div>
+                <div id="align">
 
                     <ul class="text-start">
 
@@ -154,12 +154,12 @@
                 <div class="text-black" id="absoluteTxt">
 
                     <h4 class="fw-bold">{{ix.freelance}}</h4>
-                    <p class="small text-start mx-3 fw-normal text-decoration-underline">{{ix.time}} - {{ix.dateTwo}}</p>
+                    <p class="small text-start mx-3 fw-normal text-decoration-underline" data-color>{{ix.time}} - {{ix.dateTwo}}</p>
                     <ul>
 
-                        <li class="mb-4">{{ix.subtxtOne}}</li>
+                        <li class="mb-4" data-color>{{ix.subtxtOne}}</li>
 
-                        <li>{{ix.subtxtTwo}}</li>
+                        <li data-color>{{ix.subtxtTwo}}</li>
 
                     </ul>
 
@@ -178,7 +178,7 @@
             
             <div class="mt-2 pt-4 border-bottom border-black">
                 
-                <h1 class="display-5 text-center">{{ ix.name }} <br> {{ix.lastname}}</h1>
+                <h1 class="display-5 text-center" data-color>{{ ix.name }} <br> {{ix.lastname}}</h1>
                 
                 <p class="fw-bold">{{ix.jobtitle}}</p>
                 
@@ -298,5 +298,78 @@ export default {
         top: 128%;
         font-size: 25px;
     }
+
+    @media (max-width: 450px) {
+        *{
+            font-size: 10px;
+        }
+
+        [data-wrap]{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        #resumeSec{
+            min-height: 100vh;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    
+        #sideSec{
+            background-color: rgb(10, 10, 10);
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        #pos{
+            display: none;
+        }
+    
+        #textGreet{
+            position: absolute;
+            width: 80%;
+            top: 176%;
+            left: 9%;
+            font-size: 15px;
+            color: white;
+        }
+
+        #absTxt{
+            top: 220%;
+            left: 3.9%;
+            color: black;
+        }
+
+        #img{
+            position: absolute;
+            height: 165px;
+            width: 95%;
+            top: 175%;
+            background-repeat: no-repeat;
+            left: 2.5%;
+            background-image: url("https://images.pexels.com/photos/1632788/pexels-photo-1632788.jpeg?auto=compress&cs=tinysrgb&w=600");
+        }
+
+        #sideBar{
+            display: none;
+        }
+
+        #absoluteTxt{
+            top: 203%;
+            left: 1%;
+        }
+
+        #align{
+            display: flex;
+            justify-content: center !important;
+            font-size: 15px !important;
+        }
+
+
+    }
+
     
 </style>

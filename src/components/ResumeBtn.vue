@@ -1,7 +1,7 @@
 <template lang="">
   <div v-for="ix of $store.state.aboutData" v-bind:key="ix.aboutData">
 
-    <button class="continue-application">
+    <button class="continue-application" data-scale>
       <div>
         <div class="pencil"></div>
           <div class="folder">
@@ -227,6 +227,21 @@ export default {
     --pby: -3px;
     --pbd: .15s;
     --pex: -24px;
+  }
+
+  [data-scale]{
+    transform: scale(80%);
+  }
+
+  @media (max-width: 540px) {
+    [data-scale]{
+      transform: scale(70%);
+    }
+  }
+  @media (max-width: 400px) {
+    [data-scale]{
+      transform: scale(60%);
+    }
   }
   
     
