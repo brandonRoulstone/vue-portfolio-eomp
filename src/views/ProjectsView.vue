@@ -72,6 +72,7 @@ export default {
         display: flex;
         justify-content: space-evenly;
         min-height: 100vh;
+        padding-top: 90px;
     }
 
     #grid{

@@ -1,5 +1,5 @@
 <template>
-
+   <!-- https://vue-portfolio-eomp.web.app/ -->
   <NavigationBar/>
 
   <Loader /> 

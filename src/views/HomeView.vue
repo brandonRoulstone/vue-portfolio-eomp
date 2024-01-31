@@ -50,10 +50,10 @@
 
         
       </div>
+      <SocialMediaIcons />
       
     </div>
 
-    <SocialMediaIcons />
 
   </div>
   
@@ -91,6 +91,11 @@ export default {
   font-family: Kaisei HarunoUmi;
   overflow: hidden;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 #ic{

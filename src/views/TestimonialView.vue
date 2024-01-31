@@ -52,11 +52,13 @@ export default {
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     min-height: 100vh;
+    padding-top: 90px;
 }
 
 #image{
   width: 20rem;
   filter: grayscale();
+
 }
 
 #containImg{
@@ -73,11 +75,27 @@ export default {
     overflow: scroll;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1030px) {
   #gridCards{
-    overflow: scroll;
-    display: flex;
+    overflow: scroll !important;
+    display: flex !important;
     margin-left: 0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    min-height: 100vh;
+  }
+
+  #textOverflowScroll{
+    max-height: 130px;
+    overflow: scroll;
+  }
+}
+@media (max-width: 550px) {
+  #gridCards{
+    overflow: scroll !important;
+    display: flex !important;
+    margin-left: 0;
+    scroll-behavior: smooth;
     max-width: 100%;
     min-height: 100vh;
   }

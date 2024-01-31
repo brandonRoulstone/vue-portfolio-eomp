@@ -1,6 +1,6 @@
 <template>
     
-  <div v-for="ix of $store.state.aboutData" v-bind:key="ix.aboutData">
+  <div v-for="ix of $store.state.aboutData" v-bind:key="ix.aboutData" id="abBody">
 
     <!-- <h1 class="display-3">{{ix.about}}</h1> -->
     <!-- <div class="container col-xxl-8 px-4 py-5"> -->
@@ -9,7 +9,7 @@
       <div class="row flex-lg-row align-items-center" id="topSec">
 
         <div class="col-10 col-sm-12 col-lg-6" id="imgContainer">
-          <span id="tag">{{ix.imgtxt}}</span>
+          <!-- <span id="tag">{{ix.imgtxt}}</span> -->
           <img :src="ix.myImage" class="d-block mx-lg-auto img-fluid" :alt="ix.imgAlt" id="imge" loading="lazy">
 
         </div>
@@ -170,21 +170,10 @@ export default {
 }
 </script>
 <style>
-/* *{
-  overflow: hidden;
-} */
 
-
-#tag{
-  background: linear-gradient(rgba(0, 225, 255, 0.419), rgba(0, 13, 255, 0.406));
-  width: 10%;
-  color: white;
-  border-bottom-right-radius: 20px;
-  position: absolute;
-  left: 12.7%;
-  font-family: 'Times New Roman', Times, serif;
+#abBody{
+  padding-top: 90px;
 }
-
 
 #button{
   background: linear-gradient(to left,rgba(0, 30, 255, 0.897), rgb(0, 200, 255));
@@ -200,7 +189,7 @@ export default {
 }
 
 #imge{
-  height: 397px;
+  height: auto;
   transition: all 1s ease-in-out;
 }
 
@@ -289,7 +278,7 @@ export default {
 
 @media (max-width: 1025px) {
   #imge{
-    height: 390px;
+    height: auto;
   }
   
   #txt{
@@ -307,23 +296,13 @@ export default {
 
 @media (max-width: 780px){
   #imge{
-    height: 290px;
+    height: auto;
   }
   
   #txt{
     overflow: scroll;
     max-height: 170px;
     font-size: 15px;
-  }
-
-  #tag{
-    background: linear-gradient(rgba(0, 225, 255, 0.419), rgba(0, 13, 255, 0.406));
-    width: 30%;
-    color: white;
-    border-bottom-right-radius: 20px;
-    position: absolute;
-    left: 5%;
-    font-family: 'Times New Roman', Times, serif;
   }
 }
 
@@ -349,16 +328,6 @@ export default {
   ::-webkit-scrollbar {
    width: 0px;
   }
-
-  #tag{
-    background: linear-gradient(rgba(0, 225, 255, 0.419), rgba(0, 13, 255, 0.406));
-    width: 40%;
-    color: white;
-    border-bottom-right-radius: 20px;
-    position: absolute;
-    left: 3.7%;
-    font-family: 'Times New Roman', Times, serif;
-  }
 }
   
 @media (max-width: 400px) {
@@ -369,14 +338,8 @@ export default {
   ::-webkit-scrollbar {
    width: 0px;
   }
-  #tag{
-    background: linear-gradient(rgba(0, 225, 255, 0.419), rgba(0, 13, 255, 0.406));
-    width: 40%;
-    color: white;
-    border-bottom-right-radius: 20px;
-    position: absolute;
-    left: 4.1%;
-    font-family: 'Times New Roman', Times, serif;
+  #imge{
+    height: auto;
   }
 }
 @media (max-width: 380px) {
@@ -387,14 +350,8 @@ export default {
   ::-webkit-scrollbar {
    width: 0px;
   }
-  #tag{
-    background: linear-gradient(rgba(0, 225, 255, 0.419), rgba(0, 13, 255, 0.406));
-    width: 40%;
-    color: white;
-    border-bottom-right-radius: 20px;
-    position: absolute;
-    left: 4.7%;
-    font-family: 'Times New Roman', Times, serif;
+  #imge{
+    height: auto;
   }
 }
   
