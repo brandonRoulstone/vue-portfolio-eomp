@@ -1,22 +1,53 @@
 <template>
-  <div class="container" v-for="ix of $store.state.apiData" v-bind:key="ix.welcome" id="navbar">
+  <!-- <div class="container" v-for="ix of $store.state.apiData" v-bind:key="ix.welcome" id="navbar">
     <header class="d-flex justify-content-center py-3 mb-4" id="navbar-bs">
       <a href="/about" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <!-- <img src="https://cdn-thumbs.imagevenue.com/56/9a/09/ME17DI4V_t.png" alt="" height="60" width="150"> -->
         <span class="fs-4 text-white" id="logo">{{ ix.ltxt }}</span>
       </a>
 
       <ul class="nav nav-pills"> 
         <li class="nav-item nav-link" id="nav"><router-link class="text-decoration-none" to="/">Home</router-link></li>
         <li class="nav-item nav-link" id="nav"><router-link class="text-decoration-none" to="/about">About</router-link></li>
-        <li class="nav-item nav-link" id="nav"><router-link class="text-decoration-none" to="/testimonials">Testimonial</router-link></li>
+        <li class="nav-item nav-link" id="nav"><router-link class="nav-link text-decoration-none" to="/testimonials">Testimonial</router-link></li>
         <li class="nav-item nav-link" id="nav"><router-link class="text-decoration-none" to="/projects">Projects</router-link></li>
         <li class="nav-item nav-link" id="nav"><router-link class="text-decoration-none" to="/contact">Contact</router-link></li>
         <li class="nav-item nav-link" id="nav"><router-link class="text-decoration-none" to="/resume">Resume</router-link></li>
       </ul>
 
     </header>
-  </div>
+  </div> -->
+  
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-white rounded-1"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="/"></a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <router-link class="nav-link text-decoration-none" id="nav" to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+           <router-link class="nav-link text-decoration-none" id="nav" to="/about">About</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link text-decoration-none" id="nav" to="/testimonials">Testimonials</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link text-decoration-none" id="nav" to="/projects">Projects</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link text-decoration-none" id="nav" to="/contact">Contact</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link text-decoration-none" id="nav" to="/resume">Resume</router-link>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
 
 </template>
 
@@ -42,63 +73,25 @@ export default {
 
 #nav, router-link {
   font-weight: bold;
-  color: #2c3e50;
+  color: #006967;
   cursor: none;
   transition: all 1s ease-in-out;
 }
 
-#nav a.router-link-exact-active {
+#navbar a.router-link-exact-active {
   text-decoration: none;
-  color: #ffffff;
+  color: #0091ff;
 }
 
-@media (max-width: 780px) {
-  #nav, router-link {
-  font-weight: bold;
-  color: #2c3e50;
-  cursor: none;
-  transition: all 1s ease-in-out;
-  font-size: 13px;
-  }
+
+#navbar{
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
 }
 
-@media (max-width: 540px) {
-  #nav, router-link {
-  font-weight: bold;
-  color: #2c3e50;
-  cursor: none;
-  transition: all 1s ease-in-out;
-  font-size: 9px;
- }
- 
- #navbar-bs{
-    width: 100%;
-    flex-wrap: wrap;
-  }
-
-  #logo{
-    font-size: 20px !important;
-  }
-
-}
-
-@media (max-width: 380px) {
-  #nav, router-link {
-    font-weight: bold;
-    color: #2c3e50;
-    cursor: none;
-    transition: all 1s ease-in-out;
-    font-size: 13px;
-    }
-
-    #navbar-bs{
-      width: 100%;
-      flex-wrap: wrap;
-    }
-
-    #logo{
-      font-size: 15px !important;
-    }
-}
     
 </style>

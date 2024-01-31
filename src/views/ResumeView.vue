@@ -213,6 +213,10 @@ export default {
         margin-bottom: 20px;
     }
 
+    [data-wrap]{
+        padding: 90px;
+    }
+
     #sideSec{
         background-color: rgb(10, 10, 10);
         min-height: 100vh;
