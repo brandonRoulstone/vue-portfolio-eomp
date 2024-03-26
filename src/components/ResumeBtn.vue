@@ -34,9 +34,9 @@ export default {
 
 .continue-application {
     --color: #fff;
-    --background: linear-gradient(#3caad6, rgb(8, 0, 255));
-    --background-hover: #0429bb;
-    --background-left: #0d5ad7;
+    --background: linear-gradient(#ff8000, rgb(255, 225, 0));
+    --background-hover: #ff9900;
+    --background-left: #ff9500;
     --folder: #F3E9CB;
     --folder-inner: #BEB393;
     --paper: #FFFFFF;
@@ -56,6 +56,7 @@ export default {
     font-weight: 500;
     line-height: 19px;
     -webkit-appearance: none;
+    appearance: none;
     -webkit-tap-highlight-color: transparent;
     padding: 17px 29px 17px 69px;
     transition: background 0.3s;
