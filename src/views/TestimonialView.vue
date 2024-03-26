@@ -1,13 +1,13 @@
 <template>
 
-    <div id="gridCards" class="container">
+    <div id="gridCards" class="">
 
         <div v-for="ix of $store.state.testimonialData" v-bind:key="ix.id">
 
             <div class="card my-3 mx-3" id="image">
     
                 <div class="container border-bottom pb-2 border-black" id="containHeight">
-                    <img :src="ix.image" class="card-img-top" :alt="ix.personname" id="containImg">
+                    <img :src="ix.image" class="card-img-top img-fluid" :alt="ix.personname" id="containImg">
                 </div>
     
                 <div class="card-body">
@@ -49,25 +49,51 @@ export default {
 
 <style scoped>
 #gridCards{
-    display: grid;
-    grid-template-columns: repeat(3 ,1fr);
-    min-height: 100vh;
-    padding-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  background: rgb(227, 222, 222);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 1px;
+  scroll-behavior: smooth;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgb(0, 0, 0); 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(56, 54, 54, 0.632); 
 }
 
 #image{
-  width: 20rem;
-  filter: grayscale();
-
+  width: 30rem;
+  height: 39em;
+  background: rgba(235, 232, 227, 0.417) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.328);
+}
+#image:hover{
+  color: orangered;
+  border: 1px solid orangered;
 }
 
 #containImg{
-    height: 20rem;
-}
-
-#containImg:hover{
-    transform: scale(95%);
-    transition: all 0.5s ease-in-out;
+  height: 20rem;
 }
 
 #textOverflowScroll{
@@ -89,20 +115,58 @@ export default {
     max-height: 130px;
     overflow: scroll;
   }
+  
 }
 @media (max-width: 550px) {
   #gridCards{
     overflow: scroll !important;
     display: flex !important;
+    flex-direction: column;
     margin-left: 0;
     scroll-behavior: smooth;
     max-width: 100%;
     min-height: 100vh;
+    padding-top: 30px;
   }
 
   #textOverflowScroll{
     max-height: 130px;
     overflow: scroll;
+  }
+
+  #containImg{
+    height: 25rem;
+  }
+
+  #image{
+    width: 40rem;
+    height: 45em;
+  }
+}
+
+@media (max-width: 390px) {
+  #image{
+    width: 35.3rem;
+    height: 45em;
+  }
+}
+
+@media (max-width: 325px) {
+  #image{
+    width: 30rem;
+    height: 45em;
+  }
+}
+@media (max-width: 300px) {
+  #image{
+    width: 27.7rem;
+    height: 45em;
+  }
+}
+@media (max-width: 285px) {
+  #image{
+    width: 25.8rem;
+    height: 45em;
   }
 }
 
