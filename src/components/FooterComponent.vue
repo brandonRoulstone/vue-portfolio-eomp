@@ -2,10 +2,18 @@
 
     <footer v-for="footer of $store.state.apiData" v-bind:key="footer.footertxt" class="d-flex justify-content-center">
 
-        <div id="footer" class="container d-flex justify-content-center">
-
-            {{ footer.footertxt }} | All rights reserved | &copy; <p v-html="currentYear"></p>
-
+        <div class="container py-2 py-md-3 px-4 px-md-3 text-body-secondary">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" aria-label="Bootstrap">
+                        <img src="https://cdn-images.imagevenue.com/2e/77/c7/ME17UWJX_o.png" alt="" width="50" height="32" class="d-block me-2"/>
+                        <span class="fs-5 text-white border-bottom">Brandon's portfolio</span>
+                    </a>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2 text-white">{{ footer.footertxt }} &copy; <span v-html="currentYear"></span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
     </footer>
@@ -55,20 +63,5 @@ export default {
 </script>
 
 <style scoped>
-
-#footer{
-    position: relative;
-    /* bottom: 0%; */
-    border-top: 1px solid white;
-    width: 100%;
-    padding-top: 5px;
-    color: white;
-}
-
-@media (max-width: 380px) {
-    #footer{
-        font-size: 13px;
-    }
-}
     
 </style>

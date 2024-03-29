@@ -8,7 +8,7 @@
         <a class="navbar-brand" href="/">
           <img 
           src="https://cdn-images.imagevenue.com/2e/77/c7/ME17UWJX_o.png" 
-          alt="" 
+          alt="Brandon_official_logo" 
           id="imgLogo"
           loading="lazy"
           >

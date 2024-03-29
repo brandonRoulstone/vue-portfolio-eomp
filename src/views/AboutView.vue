@@ -64,7 +64,7 @@
 
       </div>
       <!-- <div id="card"></div> -->
-      <div class="container-fluid row col-lg-12 flex-lg-row align-items-center mb-4 rounded-2 mx-0" data-scale-data-to-screen-size>
+      <div class="container-fluid row col-lg-12 flex-lg-row align-items-center mb-4 rounded-3 mx-0" data-scale-data-to-screen-size>
 
         <div class="d-flex justify-content-center">
           <div id="border"></div>
@@ -75,72 +75,72 @@
         <div class="container d-flex mb-2" id="expBox">
 
           <div class="text-center mb-2">
-            <img :src="ix.html5" alt="" id="card" data-v-img/>
+            <img :src="ix.html5" alt="html_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold text-center">{{ix.htmltext}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.css" alt="" id="card" data-v-img/>
+            <img :src="ix.css" alt="css_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.csstext}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.Bootstrap" alt="" id="card" data-v-img/>
+            <img :src="ix.Bootstrap" alt="Bootstrap_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-0 fw-bold">{{ix.Bootstraptext}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.JavaScript" alt="" id="card" data-v-img/>
+            <img :src="ix.JavaScript" alt="JavaScript_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-1 fw-bold">{{ix.Jstext}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.NodeJs" alt="" id="card" data-v-img/>
+            <img :src="ix.NodeJs" alt="NodeJs_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.nodetext}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.ReactJS" alt="" id="card" data-v-img/>
+            <img :src="ix.ReactJS" alt="ReactJs_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.reacttext}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.Redux" alt="" id="card" data-v-img/>
+            <img :src="ix.Redux" alt="Redux_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.reduxtext}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.Python" alt="" id="card" data-v-img/>
+            <img :src="ix.Python" alt="Python_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.pythontext}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.ReactBootstrap" alt="" id="card" data-v-img/>
+            <img :src="ix.ReactBootstrap" alt="React_bootstrap_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.reactBootstraptext}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.Cpp" alt="" id="card" data-v-img/>
+            <img :src="ix.Cpp" alt="C_plus_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.cpptext}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.VueJs" alt="" id="card" data-v-img/>
+            <img :src="ix.VueJs" alt="VueJs_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.vuetext}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.VueX" alt="" id="card" data-v-img/>
+            <img :src="ix.VueX" alt="VueX_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.vuextext}}</span>
           </div>
 
           <div class="text-center mb-2">
-            <img :src="ix.mysql" alt="" id="card" data-v-img/>
+            <img :src="ix.mysql" alt="mysql_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.mysqltxt}}</span>
           </div>
           
           <div class="text-center mb-2">
-            <img :src="ix.Wordpress" alt="" id="card" data-v-img/>
+            <img :src="ix.Wordpress" alt="Wordpress_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.wordpresstxt}}</span>
           </div>
 
@@ -274,7 +274,7 @@ export default {
   margin: 30px;
   border-radius: 50%;
   filter: grayscale();
-  border: 1px solid black;
+  border: 2px solid black;
   background: #ffffff;
   box-shadow: 15px 15px 30px #b7b3b3fd inset,-5px -5px 30px #ffffff27;
   transition: all 0.2s ease-in-out;
@@ -284,7 +284,7 @@ export default {
   transform: scale(110%);
   transition: all 0.4s ease-in-out;
   filter: none;
-  border: 1px solid rgba(7, 229, 241, 0.523);
+  border: 2px solid rgb(255, 94, 0);
   box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.452);
 }
 

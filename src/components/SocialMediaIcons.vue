@@ -1,15 +1,15 @@
 <template lang="">
     <div v-for="ix of $store.state.apiData" v-bind:key="ix.apiData" class="d-flex justify-content-center gap-5 mt-1" id="scale">
 
-        <div class="border p-2 rounded-5" id="ic">
-          <a :href="ix.github"><i id="icon" class="fa-brands fa-github fa-xl" style="color: #000;"></i></a>
+        <div class="p-2 rounded-5" id="ic">
+          <a :href="ix.github" target="_blank"><i id="icon" class="fa-brands fa-github fa-xl" style="color: #000;"></i></a>
         </div>
   
-        <div class="border border-info p-2 rounded-5" id="ic">
-          <a :href="ix.linkedIn"><i id="icon" class="fa-brands fa-linkedin fa-xl" style="color: #0e49af;"></i></a>
+        <div class="p-2 rounded-5" id="ic">
+          <a :href="ix.linkedIn" target="_blank"><i id="icon" class="fa-brands fa-linkedin fa-xl" style="color: #0e49af;"></i></a>
         </div>
   
-        <div class="border p-2 rounded-5" id="ic">
+        <div class="p-2 rounded-5" id="ic">
           <a :href="ix.gmail"><i id="icon" class="fa-regular fa-envelope fa-xl" style="color: #000;"></i></a>
         </div>
   
@@ -29,44 +29,50 @@ export default {
 }
 </script>
 <style scoped>
+
+#ic:nth-child(2){
+  border: 1px solid blue;
+}
+
 #ic{
     animation-name: fadeBeat;
     animation-duration: 1s;
-  }
-  
-  #ic:hover{
-    scale: 115%;
-    transition: all 0.15s ease-in-out;
-  }
+    border: 1px solid orange;
+}
 
-  @keyframes fadeBeat {
-    0%{
-      filter: blur(90px);
-    }
-    25%{
-      filter: blur(50px);
-    }
-    50%{
-      filter: blur(20%);
-    }
-    75%{
-      filter: blur(10%);
-    }
-    100%{
-      filter: blur(0%);
-    }
-  }
+#ic:hover{
+  scale: 115%;
+  transition: all 0.15s ease-in-out;
+}
 
-  @media (max-width: 380px) {
-    #icon{
-      transform: scale(60%);
-    }
+@keyframes fadeBeat {
+  0%{
+    filter: blur(90px);
   }
+  25%{
+    filter: blur(50px);
+  }
+  50%{
+    filter: blur(20%);
+  }
+  75%{
+    filter: blur(10%);
+  }
+  100%{
+    filter: blur(0%);
+  }
+}
 
-  @media (max-width: 540px) {
-    #icon{
-      transform: scale(60%);
-    }
+@media (max-width: 380px) {
+  #icon{
+    transform: scale(60%);
   }
+}
+
+@media (max-width: 540px) {
+  #icon{
+    transform: scale(60%);
+  }
+}
   
 </style>

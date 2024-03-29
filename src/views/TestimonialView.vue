@@ -5,9 +5,12 @@
         <div v-for="ix of $store.state.testimonialData" v-bind:key="ix.id">
 
             <div class="card my-3 mx-3" id="image">
+              <div class="d-flex justify-content-start">
+                <i class="fa-solid fa-comments fa-2xl shadow" id="ic"></i>
+              </div>
     
                 <div class="container border-bottom pb-2 border-black" id="containHeight">
-                    <img :src="ix.image" class="card-img-top img-fluid" :alt="ix.personname" id="containImg">
+                  <img :src="ix.image" class="card-img-top img-fluid" :alt="ix.personname" id="containImg">
                 </div>
     
                 <div class="card-body">
@@ -51,9 +54,10 @@ export default {
 #gridCards{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  background: linear-gradient(to top, rgb(157, 157, 157), rgb(219, 218, 218)) !important;
   width: 100%;
   min-height: 100vh;
-  padding-top: 100px;
+  padding-top: 130px;
   background: rgb(227, 222, 222);
 }
 
@@ -81,15 +85,23 @@ export default {
 #image{
   width: 30rem;
   height: 39em;
-  background: rgba(235, 232, 227, 0.417) !important;
+  background: linear-gradient(to left,#ff8000, #ffe23c) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(0, 0, 0, 0);
   box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.328);
 }
 #image:hover{
-  color: orangered;
-  border: 1px solid orangered;
+  color: #341010;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ff8000;
+  transform: scale(101.5%);
+  background: linear-gradient(to top,#ffe23c, #ff8000) !important;
+}
+
+#ic{
+  color: black; 
+  z-index: 1234;
 }
 
 #containImg{
@@ -117,7 +129,31 @@ export default {
   }
   
 }
-@media (max-width: 550px) {
+
+@media (max-width: 496px) {
+  #gridCards{
+    overflow: scroll !important;
+    display: flex !important;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  #textOverflowScroll{
+    max-height: 130px;
+    overflow: scroll;
+  }
+
+  #containImg{
+    height: 25rem;
+  }
+
+  #image{
+    width: 26.3rem;
+    height: 43em;
+  }
+}
+
+@media (max-width: 426px) {
   #gridCards{
     overflow: scroll !important;
     display: flex !important;
@@ -140,13 +176,13 @@ export default {
 
   #image{
     width: 40rem;
-    height: 45em;
+    height: 47em;
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   #image{
-    width: 35.3rem;
+    width: 34.3rem;
     height: 45em;
   }
 }
