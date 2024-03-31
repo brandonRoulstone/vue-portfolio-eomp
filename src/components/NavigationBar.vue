@@ -7,37 +7,35 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand" href="/">
           <img 
-          src="https://cdn-images.imagevenue.com/2e/77/c7/ME17UWJX_o.png" 
+          src="https://cdn-images.imagevenue.com/a1/b3/d4/ME17XQIF_o.png" 
           alt="Brandon_official_logo" 
           id="imgLogo"
           loading="lazy"
           >
         </a>
-        <ul class="navbar-nav me-auto mb-lg-0 gap-5">
+        <ul class="navbar-nav ms-auto mb-lg-0 gap-4 mx-4">
           <li class="nav-item">
             <router-link class="nav-link text-decoration-none" id="nav" to="/" data-nav>Home</router-link>
           </li>
           <li class="nav-item">
-           <router-link class="nav-link text-decoration-none" id="nav" to="/about" data-nav>About</router-link>
+           <router-link class="nav-link text-decoration-none" id="nav" to="/about" data-nav>About me</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link text-decoration-none" id="nav" to="/testimonials" data-nav>Testimonials</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link text-decoration-none" id="nav" to="/projects" data-nav>Projects</router-link>
+            <router-link class="nav-link text-decoration-none" id="nav" to="/projects" data-nav>My Projects</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link text-decoration-none" id="nav" to="/resume" data-nav>Resume</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link text-decoration-none" id="nav" to="/contact" data-nav>Contact</router-link>
+            <router-link class="nav-link text-decoration-none" id="nav" to="/contact" data-nav>Contact me</router-link>
           </li>
         </ul>
-
       </div>
     </div>
   </nav>
-
 </template>
 
 <script>
@@ -58,14 +56,14 @@ export default {
 
 #nav, router-link {
   font-weight: bold;
-  color: #ff8000;
+  color: #000000;
   cursor: none;
   transition: all 1s ease-in-out;
 }
 
 #navbar a.router-link-exact-active {
   text-decoration: none;
-  color: #ff8c00;
+  color: #ff5500;
 }
 
 [data-nav] {
@@ -121,8 +119,11 @@ export default {
 }
 
 #imgLogo{
-  height: 90px;
-  width: 150px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 5px solid orange;
+  box-shadow: 1px 1px 10px 1px black;
 }
 
 @media (max-width: 880px) {

@@ -4,6 +4,8 @@
     
     <div class="container" id="landingBody">
 
+      <div id="ci"></div>
+
       <div class="px-4 py-5 my-5 text-center">
 
         <div class="display-5 fw-bold text-body-emphasis"> 
@@ -11,7 +13,7 @@
           <div class="container mt-5 mb-0" id="box">
 
             <span id="introText">{{ ix.welcome }}</span>
-
+            
           </div>
 
         </div>
@@ -99,7 +101,34 @@ export default {
   transition: all 0.15s ease-in-out;
 }
 
+#ci{
+  height: 40px;
+  width: 40px;
+  border: 10px solid darkorange;
+  border-radius: 50%;
+  position: absolute;
+  right: 20%;
+  animation-name: UpSideDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
 
+@keyframes UpSideDown {
+  0%{
+    transform: scale(70%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+#cursor{
+  width: 10px;
+  height: 5px;
+  background-color: #000000;
+}
 
 #body{
   transition: all 0.5s ease-in-out;

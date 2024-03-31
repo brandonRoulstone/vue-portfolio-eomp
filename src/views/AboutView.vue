@@ -7,6 +7,10 @@
       <div class="row flex-lg-row align-items-center" id="topSec">
 
         <div class="col-10 col-sm-12 col-lg-6" id="imgContainer">
+
+          <div id="imgOverlay">
+
+          </div>
           
           <img :src="ix.myImage" class="d-block img-fluid" :alt="ix.imgAlt" id="imge" loading="lazy">
 
@@ -223,6 +227,23 @@ export default {
   transition: all 1s ease-in-out;
 }
 
+#imgOverlay{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  border: 10px solid rgb(255, 204, 0);
+  transform: translateX(-30px) translateY(100px);
+}
+
+/* #imgContainer::after{
+  content: "";
+  height: 500px;
+  width: 1000px;
+  transform: translateX(-170px);
+  position: absolute !important;
+  border: 1px solid orange;
+} */
+
 #txt{
   overflow: scroll;
   max-height: 298px;
@@ -310,6 +331,10 @@ export default {
   #imge{
     height: auto;
   }
+
+  #imgOverlay{
+    display: none;
+  }
   
   #txt{
     overflow: scroll;
@@ -330,7 +355,7 @@ export default {
   backdrop-filter: blur(10px);
 }
 
-@media (max-width: 780px){
+@media (max-width: 998px){
   #imge{
     height: auto;
     width: 100%;

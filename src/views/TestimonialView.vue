@@ -54,11 +54,10 @@ export default {
 #gridCards{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: linear-gradient(to top, rgb(157, 157, 157), rgb(219, 218, 218)) !important;
   width: 100%;
   min-height: 100vh;
   padding-top: 130px;
-  background: rgb(227, 222, 222);
+  background: #cecece;
 }
 
 ::-webkit-scrollbar {
@@ -95,7 +94,6 @@ export default {
   color: #341010;
   transition: all 0.3s ease-in-out;
   border: 1px solid #ff8000;
-  transform: scale(101.5%);
   background: linear-gradient(to top,#ffe23c, #ff8000) !important;
 }
 

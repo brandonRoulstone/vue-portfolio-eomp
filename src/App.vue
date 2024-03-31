@@ -59,5 +59,10 @@ export default {
   scroll-behavior: smooth;
   cursor: none;
 }
+
+::selection {
+  background-color: #ddff0043; /* Change the background color */
+  color: #000000 !important; /* Change the text color */
+}
 </style>
 

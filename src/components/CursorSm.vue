@@ -40,7 +40,7 @@ export default {
     transform: translate(-50%,-50%);
     pointer-events: none;
     z-index: 9999;
-    transition: none!important
+    transition: none !important;
 }
 
 .inner-cursor {
