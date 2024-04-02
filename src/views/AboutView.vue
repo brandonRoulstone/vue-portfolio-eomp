@@ -22,7 +22,7 @@
             <div id="border"></div>
           </div>
 
-          <p class="lead text-black text-start" id="txt">{{ ix.pText }}</p>
+          <p class="lead text-black text-start" id="txt">Brandon Roulstone, a 20-year-old driven by unwavering dedication to excellence and pushing boundaries. His exceptional work ethic spans academia, sports, and coding, where he relentlessly surpasses expectations. With an undying passion for sports, he's cultivated discipline and teamwork alongside honing coding skills. This fusion of athleticism and coding fuels his critical thinking and strategic approach, showcasing adaptability and resilience. Brandon's pursuit isn't just about mastering domains but a testament to his agility and thirst for growth.</p>
 
           <div class="mt-3 mb-3">
             <router-link to="/resume">

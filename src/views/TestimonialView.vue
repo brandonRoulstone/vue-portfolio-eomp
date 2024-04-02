@@ -27,17 +27,20 @@
     
         </div>
 
+
     </div>
+    
 
 </template>
 
 <script>
+import CardsCompVue from './CardsComp.vue';
 export default {
 //   props : {
 //     container: "container"
 //   },
   components : {
-    
+    CardsCompVue
   },
   methods : {
     fetchTestimonialsData : function(){
@@ -82,23 +85,24 @@ export default {
 }
 
 #image{
+  color: #ff8000;
   width: 30rem;
   height: 39em;
-  background: linear-gradient(to left,#ff8000, #ffe23c) !important;
+  background: linear-gradient(to left,#1d1d1d, #181717) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid #ff8000;
   box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.328);
 }
 #image:hover{
-  color: #341010;
+  color: #fecb00;
   transition: all 0.3s ease-in-out;
-  border: 1px solid #ff8000;
-  background: linear-gradient(to top,#ffe23c, #ff8000) !important;
+  border: 1px solid #ffe600;
+  background: linear-gradient(to top,#2e2e2d, #26221e) !important;
 }
 
 #ic{
-  color: black; 
+  color: rgb(255, 170, 0); 
   z-index: 1234;
 }
 
