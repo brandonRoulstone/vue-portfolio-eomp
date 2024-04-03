@@ -169,27 +169,128 @@ export default {
             display: flex;
             justify-content: space-evenly;
             min-height: 100vh;
-            padding-top: 90px;
+            padding-top: 100px;
         }
         #grid{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             scroll-behavior: smooth;
         }
+        #containHeight{
+            width: 23rem;
+        }
+        #image{
+            width: 25rem;
+        }
+        #textOverflowScroll{
+            margin-top: 20px;
+            overflow-y: scroll;
+            height: 70px;
+        }
     }
-    @media (max-width: 780px) {
+    @media (max-width: 998px) {
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            scroll-behavior: smooth;
+        }
+
+        #containHeight{
+            width: 23rem;
+        }
+        #image{
+            width: 25rem;
+        }
+    }
+    @media (max-width: 855px) {
+        #containHeight{
+            width: 22rem;
+        }
+        #image{
+            width: 23rem;
+        }
+    }
+
+    /* @media (max-width: 800px) {
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            scroll-behavior: smooth;
+        }
+
+        #containHeight{
+            width: 29rem;
+        }
+        #image{
+            width: 35rem;
+        }
+    } */
+    @media (max-width: 790px) {
         #mainContainer{
             display: flex;
             justify-content: space-evenly;
             min-height: 100vh;
             padding-top: 60px;
         }
+        /* #grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            scroll-behavior: smooth;
+        } */
+        #containHeight{
+            width: 30rem;
+        }
+
+        #containHeight{
+            width: 21rem;
+        }
+        #image{
+            width: 22rem;
+        }
+        #textOverflowScroll{
+            overflow-y: scroll;
+            height: 60px;
+        }
+    }
+    @media (max-width: 750px) {
+
         #grid{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            /* overflow: scroll; */
             scroll-behavior: smooth;
-            /* max-width: 100%; */
+        }
+
+        #containHeight{
+            width: 30rem;
+        }
+
+        #containHeight{
+            width: 20rem;
+        }
+        #image{
+            width: 23.6rem;
+        }
+        #textOverflowScroll{
+            overflow-y: scroll;
+            height: 60px;
+        }
+    }
+    @media (max-width: 401px) {
+
+        #containHeight{
+            width: 30rem;
+        }
+
+        #containHeight{
+            width: 19rem;
+        }
+        #image{
+            width: 21rem;
+        }
+        #textOverflowScroll{
+            margin-top: 20px;
+            overflow-y: scroll;
+            height: 70px;
         }
     }
     

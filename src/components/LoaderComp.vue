@@ -25,7 +25,7 @@
       setTimeout(() => {
         // Set loaded to true after 2 seconds
         this.loaded = true; 
-      }, 2000);
+      }, 500);
     }
   };
   </script>

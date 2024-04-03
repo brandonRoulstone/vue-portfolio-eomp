@@ -1,32 +1,7 @@
 <template>
-
-    <div id="gridCards" class="">
-
-        <div v-for="ix of $store.state.testimonialData" v-bind:key="ix.id">
-
-            <div class="card my-3 mx-3" id="image">
-              <div class="d-flex justify-content-start">
-                <i class="fa-solid fa-comments fa-2xl shadow" id="ic"></i>
-              </div>
-    
-                <div class="container border-bottom pb-2 border-black" id="containHeight">
-                  <img :src="ix.image" class="card-img-top img-fluid" :alt="ix.personname" id="containImg">
-                </div>
-    
-                <div class="card-body">
-    
-                  <h4 class="card-title fw-bold fs-3">{{ix.personname}}</h4>
-    
-                  <p class="card-text fw-bold">{{ix.jobtitle}}</p>
-    
-                  <div class="card-text" id="textOverflowScroll">{{ix.text}}</div>
-    
-                </div>
-    
-            </div>
-    
-        </div>
-
+    <div id="carouselContainer">
+      
+      <CarouselCompVue />
 
     </div>
     
@@ -34,18 +9,15 @@
 </template>
 
 <script>
-import CardsCompVue from './CardsComp.vue';
+import CarouselCompVue from '@/components/CarouselComp.vue';
 export default {
-//   props : {
-//     container: "container"
-//   },
-  components : {
-    CardsCompVue
-  },
   methods : {
     fetchTestimonialsData : function(){
       this.$store.dispatch('fetchTestimonialsData')
     }
+  },
+  components : {
+    CarouselCompVue
   },
   mounted(){
     this.fetchTestimonialsData()
@@ -54,13 +26,17 @@ export default {
 </script>
 
 <style scoped>
-#gridCards{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
+
+#carouselContainer{
   min-height: 100vh;
-  padding-top: 130px;
-  background: #cecece;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://cdn-images.imagevenue.com/e6/b0/46/ME17Z1CO_o.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.146), rgba(32, 32, 32, 0.264)); */
 }
 
 ::-webkit-scrollbar {
@@ -84,7 +60,7 @@ export default {
   background: rgba(56, 54, 54, 0.632); 
 }
 
-#image{
+/* #testimonialCards{
   color: #ff8000;
   width: 30rem;
   height: 39em;
@@ -94,7 +70,7 @@ export default {
   border: 1px solid #ff8000;
   box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.328);
 }
-#image:hover{
+#testimonialCards:hover{
   color: #fecb00;
   transition: all 0.3s ease-in-out;
   border: 1px solid #ffe600;
@@ -113,9 +89,9 @@ export default {
 #textOverflowScroll{
     max-height: 170px;
     overflow: scroll;
-}
+} */
 
-@media (max-width: 1030px) {
+/* @media (max-width: 1030px) {
   #gridCards{
     overflow: scroll !important;
     display: flex !important;
@@ -149,7 +125,7 @@ export default {
     height: 25rem;
   }
 
-  #image{
+  #testimonialCards{
     width: 26.3rem;
     height: 43em;
   }
@@ -176,36 +152,36 @@ export default {
     height: 25rem;
   }
 
-  #image{
+  #testimonialCards{
     width: 40rem;
     height: 47em;
   }
 }
 
 @media (max-width: 400px) {
-  #image{
+  #testimonialCards{
     width: 34.3rem;
     height: 45em;
   }
 }
 
 @media (max-width: 325px) {
-  #image{
+  #testimonialCards{
     width: 30rem;
     height: 45em;
   }
 }
 @media (max-width: 300px) {
-  #image{
+  #testimonialCards{
     width: 27.7rem;
     height: 45em;
   }
 }
 @media (max-width: 285px) {
-  #image{
+  #testimonialCards{
     width: 25.8rem;
     height: 45em;
   }
-}
+} */
 
 </style>

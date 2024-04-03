@@ -1,8 +1,8 @@
 <template>
     <div id="resumeContainer">
-        <div class="pt-5 mt-5">
-            <ResumeCompVue />
-        </div>
+      <div class="pt-5 mt-5">
+        <ResumeCompVue />
+      </div>
     </div>
 </template>
 <script>

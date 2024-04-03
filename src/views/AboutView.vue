@@ -18,11 +18,15 @@
 
         <div class="col-lg-6" id="boxx">
 
+          <div id="circle">
+
+          </div>
+
           <div class="d-flex justify-content-center">
             <div id="border"></div>
           </div>
 
-          <p class="lead text-black text-start" id="txt">Brandon Roulstone, a 20-year-old driven by unwavering dedication to excellence and pushing boundaries. His exceptional work ethic spans academia, sports, and coding, where he relentlessly surpasses expectations. With an undying passion for sports, he's cultivated discipline and teamwork alongside honing coding skills. This fusion of athleticism and coding fuels his critical thinking and strategic approach, showcasing adaptability and resilience. Brandon's pursuit isn't just about mastering domains but a testament to his agility and thirst for growth.</p>
+          <p class="lead text-black text-start" id="txt">I am Brandon Roulstone, a 20-year-old driven by unwavering dedication to excellence and pushing boundaries. My exceptional work ethic spans academia, sports, and coding, where he relentlessly surpasses expectations. With an undying passion for sports, I have cultivated discipline and teamwork alongside honing coding skills. This fusion of athleticism and coding fuels my critical thinking and strategic approach, showcasing adaptability and resilience. My pursuit isn't just about mastering domains but a testament to my agility and thirst for growth.</p>
 
           <div class="mt-3 mb-3">
             <router-link to="/resume">
@@ -182,13 +186,38 @@ export default {
 
 #abBody{
   padding-top: 90px;
-  background-image: url('https://cdn-images.imagevenue.com/bc/e0/e8/ME17UWA9_o.jpg');
+  background-image: url('https://cdn-images.imagevenue.com/02/2c/38/ME17YYZ8_o.png');
   border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.104), rgba(0, 0, 0, 0.175));
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+#circle{
+  height: 40px;
+  width: 40px;
+  border: 8px solid darkorange;
+  border-radius: 50%;
+  position: absolute;
+  right: -3.3%;
+  top: -3.5%;
+  animation-name: UpSideDown;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes UpSideDown {
+  0%{
+    transform: scale(70%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(100%);
+  }
 }
 
 #boxx{
@@ -216,7 +245,7 @@ export default {
 #border{
   height: 20px;
   width: 30%;
-  background: rgb(255, 204, 0);
+  background: rgb(255, 157, 0);
 }
 
 
@@ -231,18 +260,9 @@ export default {
   height: 400px;
   width: 400px;
   position: absolute;
-  border: 10px solid rgb(255, 204, 0);
+  border: 10px solid rgb(255, 157, 0);
   transform: translateX(-30px) translateY(100px);
 }
-
-/* #imgContainer::after{
-  content: "";
-  height: 500px;
-  width: 1000px;
-  transform: translateX(-170px);
-  position: absolute !important;
-  border: 1px solid orange;
-} */
 
 #txt{
   overflow: scroll;
@@ -370,6 +390,12 @@ export default {
 }
 
 @media (max-width: 450px) {
+  #circle{
+    height: 25px;
+    width: 25px;
+    border: 5px solid orange;
+    right: 10%;
+  }
   #imgContainer{
     display: flex;
     justify-content: center;

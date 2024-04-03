@@ -27,7 +27,7 @@
                 </div>
                 <span class="small mx-3">a year ago</span>
             </div>
-            <div id="userTxt">Awesom website broooo</div>
+            <div id="userTxt">Awesome website broooo</div>
         </div>
     </div>
 </template>
