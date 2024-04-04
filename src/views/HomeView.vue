@@ -32,7 +32,7 @@
 
             </router-link>
             
-            <a href="https://doc-14-8c-prod-03-apps-viewer.googleusercontent.com/viewer2/prod-03/pdf/d8o47872heut741vltjfpf022o808co9/m3pnfb249bmq3p3jen4oiulb7lpc1vvh/1712228175000/3/112216125655560560638/APznzaaJy_EzCrkzWP9rOCYums6P2UASwqP5P0uvLKjndNs1oKpCuh4Wd7OtPGeLR7U5DIvEK8E2gUIur5DYFtXR872YHEItG0qPJSK87leTxfoP-_BiWr_mFVCfL50RFu4fdidFMYpMIdKWow2ueNbnFubKTTUt1xhCvIa0kal_J16p1FnBnzYggMlvWJbYj07eqVJPdzPkLBL7McnTjCFBCM3TlgRBhKyp99ET95saBwbPhaOUN_EGhzosp1q21UGUuEGDBBjIVKGPPNJsM2O-yTofZZJhRo_d3XzJ9ZcSORBUIWZXC8l5rEECxizh_l-gCn2xv9khIz_C730Iza_vj2ReNBVzaGrUpTlejp4ynxCS3Scz37kRvsW_R3l2efbWkyxZSLY2jgzPrpqa76yl-jhcDNL4g9Cj5_On0HIF5gS_qMp6CNU=?authuser=0&nonce=g4vueu58qsubm&user=112216125655560560638&hash=imidargbfv0emaqq950p4d4nu2v5hi09" target="_blank" class="btn btn-lg px-4" data-btn-middle download>view resume</a>
+            <a href="https://drive.google.com/file/d/1LpDbb4mJMcIxhmQJAgL_a8DbYotl4QM2/view?usp=sharing" target="_blank" class="btn btn-lg px-4" data-btn-middle download>view resume</a>
             <router-link to="/contact">
 
               <button type="button" class="btn btn-lg px-4" data-btn>{{ ix.hireMebtn }}</button>
