@@ -18,7 +18,7 @@
 
         </div>
 
-        <p class="lead mb-1" id="text-L">{{ ix.textsm }} & Software engineer</p>
+        <p class="lead mb-1" id="text-L">Full-stack {{ ix.textsm }} & Software engineer</p>
 
         <div class="col-lg-6 mx-auto">
 
