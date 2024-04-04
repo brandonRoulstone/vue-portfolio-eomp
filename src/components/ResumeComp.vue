@@ -32,7 +32,7 @@
       <h1 class="title">Socials</h1>
       <div class="info-section link">
         <div id = "linkedin-div">
-        <a href="https://www.linkedin.com/in/muhammad-rajah-a1a00421a/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #f59105; cursor: pointer;"></i></a>
+        <a href="https://www.linkedin.com/in/brandon-roulstone-4b69a9290/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #f59105; cursor: pointer;"></i></a>
         <span class="mx-2" style="color: black; font-weight: bold; font-size: 15px;">Linkdin</span>
         </div>
         <div id = "github-div">
@@ -121,7 +121,7 @@
             </div> -->
           </li>
           <li>
-            <span>Wordpress</span>
+            <span>C++</span>
             <!-- <div class="sb-skeleton">
               <div class="skillbar" style="--pgbar-length: 30%"></div>
             </div> -->
@@ -152,6 +152,12 @@
           </li>
           <li>
             <span>TypeScript</span>
+            <!-- <div class="sb-skeleton">
+              <div class="skillbar" style="--pgbar-length: 0%"></div>
+            </div> -->
+          </li>
+          <li>
+            <span>Pyhon 3</span>
             <!-- <div class="sb-skeleton">
               <div class="skillbar" style="--pgbar-length: 0%"></div>
             </div> -->

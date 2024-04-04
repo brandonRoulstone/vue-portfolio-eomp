@@ -13,7 +13,7 @@
           <div class="paper"></div>
         </div>
       </div>
-      {{ix.viewResume}}
+      View website resume
     </button>
 
   </div>

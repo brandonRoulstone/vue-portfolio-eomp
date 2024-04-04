@@ -2,15 +2,11 @@
     <div v-for="ix of $store.state.apiData" v-bind:key="ix.apiData" class="d-flex justify-content-center gap-5 mt-1" id="scale">
 
       <div class="p-2 rounded-5" id="ic">
-        <a :href="ix.github" target="_blank"><i id="icon" class="fa-brands fa-github fa-xl" style="color: #000;"></i></a>
+        <a :href="ix.github" target="_blank"><i id="icon" class="fa-brands fa-github fa-xl fa-fade" style="color: #000;"></i></a>
       </div>
 
       <div class="p-2 rounded-5" id="ic">
-        <a :href="ix.linkedIn" target="_blank"><i id="icon" class="fa-brands fa-linkedin fa-xl fa-bounce" style="color: #0e49af;"></i></a>
-      </div>
-
-      <div class="p-2 rounded-5" id="ic">
-        <a :href="ix.gmail"><i id="icon" class="fa-regular fa-envelope fa-xl" style="color: #000;"></i></a>
+        <a :href="ix.linkedIn" target="_blank"><i id="icon" class="fa-brands fa-linkedin fa-xl fa-fade" style="color: #0e49af;"></i></a>
       </div>
   
     </div>

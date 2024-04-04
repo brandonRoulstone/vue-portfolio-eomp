@@ -1,9 +1,9 @@
 <template>
-    <div id="carouselContainer">
+  <div id="carouselContainer">
       
-      <CarouselCompVue />
+    <CarouselCompVue />
 
-    </div>
+  </div>
     
 
 </template>

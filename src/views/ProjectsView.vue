@@ -8,16 +8,16 @@
 
                         <img :src="ix.image" class="card-img-top" :alt="ix.personname" id="containImg">
 
-                        <div class="container mt-2 d-flex justify-content-evenly">
+                        
+                    </div>
+                    
+                    <div class="container mt-2 d-flex justify-content-evenly">
 
-                            <a :href="ix.Github" class="btn shadow" target="_blank" id="btnGit"><i class="fa-brands fa-github fa-sm" style="color: #000000;"></i> {{ix.gittxt}}</a>
+                        <a :href="ix.Github" class="btn shadow" target="_blank" id="btnGit"><i class="fa-brands fa-github fa-sm" style="color: #000000;"></i> {{ix.gittxt}}</a>
 
-                            <a :href="ix.live" class="btn shadow" target="_blank" id="btnLive"><i class="fa-solid fa-server fa-sm" style="color: #000000;"></i> {{ix.livetxt}}</a>
-
-                        </div>
+                        <a :href="ix.live" class="btn shadow" target="_blank" id="btnLive"><i class="fa-solid fa-server fa-sm" style="color: #000000;"></i> {{ix.livetxt}}</a>
 
                     </div>
-        
                     <div class="card-body" id="cBody">
         
                       <h4 class="card-title fw-bold" id="head">{{ix.name}}</h4>
@@ -51,7 +51,6 @@ export default {
         width: 10px;
     }
     
-    /* Track */
     ::-webkit-scrollbar-track {
         -webkit-border-radius: 10px;
         scroll-behavior: smooth;
@@ -88,29 +87,8 @@ export default {
         height: 35rem;
         background: linear-gradient(to bottom,#b5b5b5, #dfdfdf);
         border: 5px solid orange;
-        /* animation-name: flicker;
-        animation-duration: 5s;
-        animation-iteration-count: infinite; */
         box-shadow: inset 5px 5px 40px 5px rgba(221, 137, 2, 0.383);
     }
-
-    /* @keyframes flicker {
-        0%{
-            border: 5px solid orange;
-        }
-        25%{
-            border: 5px solid rgba(255, 174, 0, 0.984);
-        }
-        50%{
-            border: 5px solid rgb(255, 123, 0);
-        }
-        75%{
-            border: 5px solid rgb(255, 196, 0);
-        }
-        100%{
-            border: 5px solid orange;
-        }
-    } */
     
     #containImg{
         height: 20rem;
@@ -130,24 +108,15 @@ export default {
         width: 100%;
     }
 
-    #btnLive{
+    #btnLive, #btnGit{
         border: 1px solid rgba(0, 0, 0, 0);
         background: radial-gradient(circle, rgb(255, 234, 0), rgb(255, 96, 5));
-        width: 30%;
     }
 
-    #btnGit{
+    /* #btnGit{
         border: 1px solid rgba(255, 254, 254, 0);
         background: radial-gradient(circle, rgb(255, 234, 0), rgb(255, 96, 5));
-        width: 30%;
-    }
-
-    /* .card:active {
-        transition: all 0.3s ease-in-out;
-        transform: scale(0.95) rotateZ(1.7deg);
     } */
-
-    
     
     #btnGit:active{
         border: 1px solid rgb(30, 29, 29);
@@ -211,20 +180,6 @@ export default {
         }
     }
 
-    /* @media (max-width: 800px) {
-        #grid{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            scroll-behavior: smooth;
-        }
-
-        #containHeight{
-            width: 29rem;
-        }
-        #image{
-            width: 35rem;
-        }
-    } */
     @media (max-width: 790px) {
         #mainContainer{
             display: flex;
@@ -232,11 +187,7 @@ export default {
             min-height: 100vh;
             padding-top: 60px;
         }
-        /* #grid{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            scroll-behavior: smooth;
-        } */
+        
         #containHeight{
             width: 30rem;
         }
@@ -278,19 +229,15 @@ export default {
     @media (max-width: 401px) {
 
         #containHeight{
-            width: 30rem;
-        }
-
-        #containHeight{
-            width: 19rem;
-        }
+            width: 17rem;
+        } 
         #image{
-            width: 21rem;
+            width: 18rem;
         }
         #textOverflowScroll{
             margin-top: 20px;
             overflow-y: scroll;
-            height: 70px;
+            height: 60px;
         }
     }
     

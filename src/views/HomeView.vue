@@ -31,12 +31,14 @@
               <button type="button" class="btn btn-lg px-4" data-btn>{{ ix.projectsBtn }}</button>
 
             </router-link>
-
+            
+            <a href="https://doc-14-8c-prod-03-apps-viewer.googleusercontent.com/viewer2/prod-03/pdf/d8o47872heut741vltjfpf022o808co9/m3pnfb249bmq3p3jen4oiulb7lpc1vvh/1712228175000/3/112216125655560560638/APznzaaJy_EzCrkzWP9rOCYums6P2UASwqP5P0uvLKjndNs1oKpCuh4Wd7OtPGeLR7U5DIvEK8E2gUIur5DYFtXR872YHEItG0qPJSK87leTxfoP-_BiWr_mFVCfL50RFu4fdidFMYpMIdKWow2ueNbnFubKTTUt1xhCvIa0kal_J16p1FnBnzYggMlvWJbYj07eqVJPdzPkLBL7McnTjCFBCM3TlgRBhKyp99ET95saBwbPhaOUN_EGhzosp1q21UGUuEGDBBjIVKGPPNJsM2O-yTofZZJhRo_d3XzJ9ZcSORBUIWZXC8l5rEECxizh_l-gCn2xv9khIz_C730Iza_vj2ReNBVzaGrUpTlejp4ynxCS3Scz37kRvsW_R3l2efbWkyxZSLY2jgzPrpqa76yl-jhcDNL4g9Cj5_On0HIF5gS_qMp6CNU=?authuser=0&nonce=g4vueu58qsubm&user=112216125655560560638&hash=imidargbfv0emaqq950p4d4nu2v5hi09" target="_blank" class="btn btn-lg px-4" data-btn-middle download>view resume</a>
             <router-link to="/contact">
 
               <button type="button" class="btn btn-lg px-4" data-btn>{{ ix.hireMebtn }}</button>
 
             </router-link>
+
 
           </div> 
 
@@ -200,6 +202,37 @@ export default {
  overflow: hidden;
  z-index: 1;
  border: 1px solid orangered;
+}
+[data-btn-middle] {
+ width: 9em;
+ height: 3em;
+ color: rgb(255, 255, 255);
+ font-weight: bold;
+ border-radius: 30em;
+ font-size: 15px;
+ font-family: inherit;
+ position: relative;
+ overflow: hidden;
+ z-index: 1;
+ border: 1px solid orangered;
+}
+
+[data-btn-middle]::before {
+ content: '';
+ width: 100%;
+ height: 3em;
+ border-radius: 30em;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(to right, #ff9100 10%, #f9b847 100%);
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+[data-btn-middle]:hover::before {
+ width: 0%;
 }
 
 [data-btn]::before {

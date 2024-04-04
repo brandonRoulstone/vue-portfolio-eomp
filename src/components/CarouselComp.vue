@@ -7,7 +7,7 @@
                       <i class="fa-solid fa-quote-right fa-sm fa-beat" style="color: #fff;"></i>
                   </div>
                   <div class="d-flex container justify-content-center">
-                  <img :src="slide.image" :alt="slide.personname" class="img img-fluid" id="img">
+                  <img :src="slide.image" :alt="slide.personname" class="img img-fluid" id="img" loading="lazy">
               </div>
               <div>
                   <span class="fs-3 text-start" id="meadiaTxtSm">{{ slide.personname }}</span>
@@ -46,6 +46,7 @@
     border: 1px solid rgb(255, 85, 0);
     height: 150px;
     width: 150px;
+    object-fit: contain !important;
   }
 
   #mainContainer{
