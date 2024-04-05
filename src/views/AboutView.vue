@@ -26,7 +26,7 @@
             <div id="border"></div>
           </div>
 
-          <p class="lead text-black text-start" id="txt">I am Brandon Roulstone, a 20-year-old driven by unwavering dedication to excellence and pushing boundaries. My exceptional work ethic spans academia, sports, and coding, where he relentlessly surpasses expectations. With an undying passion for sports, I have cultivated discipline and teamwork alongside honing coding skills. This fusion of athleticism and coding fuels my critical thinking and strategic approach, showcasing adaptability and resilience. My pursuit isn't just about mastering domains but a testament to my agility and thirst for growth.</p>
+          <p class="lead text-black text-start" id="txt">I am Brandon Roulstone, a 20-year-old driven by unwavering dedication to excellence and pushing boundaries. My exceptional work ethic spans academia, sports, and coding, where I relentlessly surpasses expectations. With an undying passion for sports, I have cultivated discipline and teamwork alongside honing coding skills. This fusion of athleticism and coding fuels my critical thinking and strategic approach, showcasing adaptability and resilience. My pursuit isn't just about mastering domains but a testament to my agility and thirst for growth.</p>
 
           <div class="mt-3 mb-3">
             <router-link to="/resume">

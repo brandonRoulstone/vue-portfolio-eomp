@@ -24,11 +24,11 @@
             <router-link class="nav-link text-decoration-none" id="nav" to="/testimonials" data-nav>References</router-link>
           </li>
           <li class="nav-item">
+            <router-link class="nav-link text-decoration-none" id="nav" to="/education" data-nav>Education</router-link>
+          </li>
+          <li class="nav-item">
             <router-link class="nav-link text-decoration-none" id="nav" to="/projects" data-nav>My Projects</router-link>
           </li>
-          <!-- <li class="nav-item">
-            <router-link class="nav-link text-decoration-none" id="nav" to="/resume" data-nav>Resume</router-link>
-          </li> -->
           <li class="nav-item">
             <router-link class="nav-link text-decoration-none" id="nav" to="/contact" data-nav>Contact me</router-link>
           </li>

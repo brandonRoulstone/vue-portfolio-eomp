@@ -32,6 +32,13 @@
         </div>
     </div>
 </template>
+<!--    {
+            "id": 9,
+            "image": "https://cdn-images.imagevenue.com/69/c7/41/ME17ZG7K_o.png",
+            "personname": "Asithandile Tyulu",
+            "jobtitle":"Intern",
+            "text": "Brandon is a tireless worker fueled by caffeine and a relentless pursuit of excellence, his insatiable curiosity for programming languages makes him an invaluable asset. With a blend of emotional intelligence, humor, and expertise, he brings a vibrant energy to any team fortunate enough to have him."
+        } -->
 <script>
 export default {
     methods : {
@@ -102,10 +109,14 @@ export default {
         image-rendering: crisp-edges;
     }
 
-    #textOverflowScroll, #head{
+     #head{
         color: #000000;
         height: 20%;
         width: 100%;
+    }
+    #textOverflowScroll{
+        max-height: 120px !important;
+        overflow: scroll;
     }
 
     #btnLive, #btnGit{

@@ -83,7 +83,7 @@
         </div>
         <div class="timeline-block">
           <h1>Life Choices Studio Intern</h1>
-          <p>During my time as an intern in LCS as a web Developer I got the chance to work in a team and I obtained soft skills like team work,and comminication skills which enabled me to be more resilient, and utilized my time managment effectively.At the time at lcs I got to learn new technologies like C++ and python and use it in real time and made me me more proff</p>
+          <p>During my time as an intern in LCS as a web Developer I got the chance to work in a team and I obtained soft skills like team work,and comminication skills which enabled me to be more resilient, and utilized my time managment effectively.At the time at lcs I got to learn new technologies like C++ and python and use it in real time and made me me more proficient in the development sector</p>
           <p>2024 - Present</p>
         </div>
         <div class="timeline-block">

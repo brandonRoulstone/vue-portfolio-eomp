@@ -24,7 +24,7 @@
 
           <!-- <p class="lead mb-4" id="text-S">{{ ix.subtxt }}</p> -->
 
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <div class="d-grid gap-2 d-sm-flex justify-content-center">
 
             <router-link to="/projects">
 
@@ -33,6 +33,7 @@
             </router-link>
             
             <a href="https://drive.google.com/file/d/1LpDbb4mJMcIxhmQJAgL_a8DbYotl4QM2/view?usp=sharing" target="_blank" class="btn btn-lg px-4" data-btn-middle download>view resume</a>
+
             <router-link to="/contact">
 
               <button type="button" class="btn btn-lg px-4" data-btn>{{ ix.hireMebtn }}</button>
@@ -372,6 +373,36 @@ export default {
     z-index: -1;
   }
 
+  [data-btn-middle] {
+    width: 9em;
+    height: 2em;
+    color: rgb(255, 119, 0);
+    font-weight: bold;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+}
+
+[data-btn-middle]::before {
+  content: '';
+  width: 100%;
+  height: 3em;
+  border-radius: 20em;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: none;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+}
+  
+
 }
 
 @media (max-width: 540px) {
@@ -427,7 +458,7 @@ export default {
     font-size: 11px;
   }
 
-  [data-btn]{
+  [data-btn], [data-btn-middle]{
     font-size: 13px;
   }
 
