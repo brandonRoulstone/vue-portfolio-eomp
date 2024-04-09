@@ -147,10 +147,10 @@
             <span class="px-4 mx-2 fw-bold">{{ix.mysqltxt}}</span>
           </div>
           
-          <div class="text-center mb-2">
+          <!-- <div class="text-center mb-2">
             <img :src="ix.Wordpress" alt="Wordpress_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.wordpresstxt}}</span>
-          </div>
+          </div> -->
 
         </div>
         <div class="d-flex justify-content-center border-top border-black pt-2 pb-2" v-for="btn of $store.state.aboutData" v-bind:key="btn.aboutData">

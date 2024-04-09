@@ -24,7 +24,7 @@
             <router-link class="nav-link text-decoration-none" id="nav" to="/testimonials" data-nav>References</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link text-decoration-none" id="nav" to="/education" data-nav>Education</router-link>
+            <router-link class="nav-link text-decoration-none" id="nav" to="/education" data-nav>Education/work</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link text-decoration-none" id="nav" to="/projects" data-nav>My Projects</router-link>

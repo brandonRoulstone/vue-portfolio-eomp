@@ -1,7 +1,7 @@
 <template>
     <section id="bgBody">
         <div class="container px-4 py-5 gap-3" id="hanging-icons">
-            <h2 class="pb-2 display-4 text-black">Education History</h2>
+            <h2 class="pb-2 display-4 text-black pt-5">Education History</h2>
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-1">
                 <div class="col d-flex align-items-start justify-content-center py-5 px-3" id="bgCard1">
                     <div class="icon-square bg-light px-3 py-3 rounded-5 text-dark flex-shrink-0 me-3 border border-black">
@@ -23,6 +23,8 @@
                     </div>
                 </div>
             </div>
+
+            <a href="#bgSection"><button class="btn btn-outline-dark px-3 py-3">Job experience</button></a>
         </div>
     </section>
     <section id="bgSection">
