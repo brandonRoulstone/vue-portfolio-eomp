@@ -144,6 +144,25 @@ export default {
         background: radial-gradient(circle, rgb(255, 96, 5), rgb(255, 234, 0));
     }
 
+    @media (max-width: 1450px) {
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            scroll-behavior: smooth;
+        }
+        #containHeight{
+            width: 33rem;
+        }
+        #image{
+            width: 35rem;
+        }
+        #textOverflowScroll{
+            margin-top: 20px;
+            overflow-y: scroll;
+            height: 70px;
+        }
+    }
+
     @media (max-width: 1080px) {
         #mainContainer{
             display: flex;

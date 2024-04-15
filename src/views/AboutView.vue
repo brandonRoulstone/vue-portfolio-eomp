@@ -333,6 +333,10 @@ export default {
   #imge{
     height: 390px;
   }
+
+  #imgOverlay{
+    display: none;
+  }
   
   #txt{
     overflow: scroll;
