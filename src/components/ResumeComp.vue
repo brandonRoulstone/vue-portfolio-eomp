@@ -58,7 +58,7 @@
         <div class="timeline-block">
           <h1>Life Choices Coding Academy</h1>
           <p>Web Development, UI/UX & Software engineering</p>
-          <p>2023 - Present</p>
+          <p>2023 - 2024</p>
         </div>
         <div class="timeline-block">
           <h1>Heathfield high School</h1>
