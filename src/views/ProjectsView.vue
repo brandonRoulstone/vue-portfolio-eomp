@@ -93,7 +93,7 @@ export default {
         width: 30rem;
         height: 35rem;
         background: linear-gradient(to bottom,#b5b5b5, #dfdfdf);
-        border: 5px solid orange;
+        border: 2px solid orange;
         box-shadow: inset 5px 5px 40px 5px rgba(221, 137, 2, 0.383);
     }
     

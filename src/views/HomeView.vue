@@ -140,7 +140,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.104), rgba(0, 0, 0, 0.175));
+  /* border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.104), rgba(0, 0, 0, 0.175)); */
 }
 
 #box {

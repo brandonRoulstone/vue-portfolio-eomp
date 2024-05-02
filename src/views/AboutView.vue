@@ -187,7 +187,7 @@ export default {
 #abBody{
   padding-top: 90px;
   background-image: url('https://cdn-images.imagevenue.com/02/2c/38/ME17YYZ8_o.png');
-  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.104), rgba(0, 0, 0, 0.175));
+  /* border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.104), rgba(0, 0, 0, 0.175)); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
