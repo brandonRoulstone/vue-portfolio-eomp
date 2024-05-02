@@ -155,11 +155,10 @@ export default {
       <ul>
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/education">education & Experience</router-link></li>
-        <li><router-link to="/projects">Projects</router-link></li>
-        <li><router-link to="/testimonials">Reviews</router-link></li>
-        <li><router-link to="/contact">Contact</router-link></li>
-        <li class="small"><a href="https://www.linkedin.com/in/brandon-roulstone-4b69a9290/">LinkedIn</a><a href="" target="_blank">Github</a></li>
+        <li><router-link to="/">education & Experience</router-link></li>
+        <li><router-link to="/">Projects</router-link></li>
+        <li><router-link to="/">Reviews</router-link></li>
+        <li><router-link to="/">Contact</router-link></li>
       </ul>
     </div>
   </div>
