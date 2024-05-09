@@ -32,7 +32,7 @@
 
             </router-link>
             
-            <a href="https://drive.google.com/file/d/18FwAEbHXTVhntCq0BH4QrSTwDxAAquuI/view?usp=sharing" target="_blank" class="btn btn-lg px-4" data-btn-middle download>view resume</a>
+            <a href="https://drive.google.com/file/d/18FwAEbHXTVhntCq0BH4QrSTwDxAAquuI/view?usp=sharing" target="_blank" class="btn btn-lg px-4" data-btn-middle download>My CV</a>
 
             <router-link to="/contact">
 
