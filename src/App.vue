@@ -2,6 +2,8 @@
    <!-- https://vue-portfolio-eomp.web.app/ -->
   <NavigationBar/>
 
+  <SpeedInsights />
+
   <Loader /> 
 
   <CursorSm />
@@ -19,6 +21,7 @@ import Loader from "./components/LoaderComp.vue";
 import CursorSm from './components/CursorSm.vue';
 import NavigationBar from "./components/NavigationBar.vue";
 import FooterComponent from "./components/FooterComponent.vue";
+import { SpeedInsights } from "@vercel/speed-insights/vue"
 
 
 export default {
@@ -26,7 +29,8 @@ export default {
     Loader,
     NavigationBar,
     CursorSm,
-    FooterComponent
+    FooterComponent,
+    SpeedInsights
   },
   data() {
     return {
