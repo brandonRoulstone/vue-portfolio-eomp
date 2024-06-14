@@ -82,20 +82,6 @@
 
         <div class="container d-flex mb-2" id="expBox">
 
-          <div class="text-center mb-2">
-            <img :src="ix.html5" alt="html_logo" id="card" data-v-img loading="lazy"/>
-            <span class="px-4 mx-2 fw-bold text-center">{{ix.htmltext}}</span>
-          </div>
-          
-          <div class="text-center mb-2">
-            <img :src="ix.css" alt="css_logo" id="card" data-v-img loading="lazy"/>
-            <span class="px-4 mx-2 fw-bold">{{ix.csstext}}</span>
-          </div>
-          
-          <div class="text-center mb-2">
-            <img :src="ix.Bootstrap" alt="Bootstrap_logo" id="card" data-v-img loading="lazy"/>
-            <span class="px-4 mx-0 fw-bold">{{ix.Bootstraptext}}</span>
-          </div>
           
           <div class="text-center mb-2">
             <img :src="ix.JavaScript" alt="JavaScript_logo" id="card" data-v-img loading="lazy"/>
@@ -106,30 +92,40 @@
             <img :src="ix.NodeJs" alt="NodeJs_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.nodetext}}</span>
           </div>
+
+          <div class="text-center mb-2">
+            <img :src="ix.NextJS" alt="React_bootstrap_logo" id="card" data-v-img loading="lazy"/>
+            <span class="px-4 mx-2 fw-bold">{{ix.nextjsTxt}}</span>
+          </div>
           
+          <div class="text-center mb-2">
+            <img :src="ix.tailwind" alt="React_bootstrap_logo" id="card" data-v-img loading="lazy"/>
+            <span class="px-4 mx-2 fw-bold">{{ix.tailwindTxt}}</span>
+          </div>
+
           <div class="text-center mb-2">
             <img :src="ix.ReactJS" alt="ReactJs_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.reacttext}}</span>
           </div>
           
-          <div class="text-center mb-2">
+          <!-- <div class="text-center mb-2">
             <img :src="ix.Redux" alt="Redux_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.reduxtext}}</span>
-          </div>
+          </div> -->
           
           <div class="text-center mb-2">
             <img :src="ix.Python" alt="Python_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.pythontext}}</span>
           </div>
           
-          <div class="text-center mb-2">
+          <!-- <div class="text-center mb-2">
             <img :src="ix.ReactBootstrap" alt="React_bootstrap_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.reactBootstraptext}}</span>
-          </div>
-          
+          </div> -->
+
           <div class="text-center mb-2">
-            <img :src="ix.Cpp" alt="C_plus_logo" id="card" data-v-img loading="lazy"/>
-            <span class="px-4 mx-2 fw-bold">{{ix.cpptext}}</span>
+            <img :src="ix.Bootstrap" alt="Bootstrap_logo" id="card" data-v-img loading="lazy"/>
+            <span class="px-4 mx-0 fw-bold">{{ix.Bootstraptext}}</span>
           </div>
           
           <div class="text-center mb-2">
@@ -143,14 +139,30 @@
           </div>
 
           <div class="text-center mb-2">
+            <img :src="ix.Cpp" alt="C_plus_logo" id="card" data-v-img loading="lazy"/>
+            <span class="px-4 mx-2 fw-bold">{{ix.cpptext}}</span>
+          </div>
+          
+          <div class="text-center mb-2">
             <img :src="ix.mysql" alt="mysql_logo" id="card" data-v-img loading="lazy"/>
             <span class="px-4 mx-2 fw-bold">{{ix.mysqltxt}}</span>
           </div>
           
-          <!-- <div class="text-center mb-2">
-            <img :src="ix.Wordpress" alt="Wordpress_logo" id="card" data-v-img loading="lazy"/>
-            <span class="px-4 mx-2 fw-bold">{{ix.wordpresstxt}}</span>
-          </div> -->
+          <div class="text-center mb-2">
+            <img :src="ix.mongoDb" alt="mysql_logo" id="card" data-v-img loading="lazy"/>
+            <span class="px-4 mx-2 fw-bold">{{ix.mongoTxt}}</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.html5" alt="html_logo" id="card" data-v-img loading="lazy"/>
+            <span class="px-4 mx-2 fw-bold text-center">{{ix.htmltext}}</span>
+          </div>
+          
+          <div class="text-center mb-2">
+            <img :src="ix.css" alt="css_logo" id="card" data-v-img loading="lazy"/>
+            <span class="px-4 mx-2 fw-bold">{{ix.csstext}}</span>
+          </div>
+          
 
         </div>
         <div class="d-flex justify-content-center border-top border-black pt-2 pb-2" v-for="btn of $store.state.aboutData" v-bind:key="btn.aboutData">
@@ -166,8 +178,8 @@
 
 </template>
 <script>
-import ResumeBtnVue from '../components/ResumeBtn.vue'
-// import ResumeBtnVue
+import ResumeBtnVue from '../components/ResumeBtn.vue';
+
 export default {
   components : {
     ResumeBtnVue
@@ -243,7 +255,7 @@ export default {
 }
 
 #border{
-  height: 20px;
+  height: 15px;
   width: 30%;
   background: rgb(255, 157, 0);
 }

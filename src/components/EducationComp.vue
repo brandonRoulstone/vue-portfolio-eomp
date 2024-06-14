@@ -49,7 +49,7 @@
                     </div>
                     <div id="bcgsm" class="py-4 px-4 shadow">
                         <h2>Freelancer</h2>
-                        <p>I built websites using Vue Js and React Js and using Node Js as my backend for client websites, I am proficient in these two frontend end frameworks along with Nuxt Js, which I picked up on my way in my freelancing journey, I gained soft skills like nogotiating,team work and communication from this work journey</p>
+                        <p>I built websites using Vue Js and React Js and using Node Js as my backend for client websites, I am proficient in these two frontend end frameworks, which I picked up on my way in my freelancing journey, I gained soft skills like nogotiating,team work and communication from this work journey</p>
                     </div>
                 </div>
             </div>
